@@ -7,7 +7,7 @@ const Navigation = () => {
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
 
   return (
-    <div className="w-full max-w-[1140px] m-auto p-4 text-xs xxsm:text-sm flex justify-between items-center">
+    <div className="w-full max-w-[1140px] m-auto px-4 py-6 text-xs xxsm:text-sm flex justify-between items-center">
       <Link
         to="/"
         title="Home"

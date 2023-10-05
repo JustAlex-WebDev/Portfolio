@@ -6,7 +6,20 @@ const Cursor = () => {
 
   return (
     <>
-      <div ref={dotOutline} className="cursor-dot-outline relative z-50"></div>
+      {cursor === "projects" ? (
+        <div
+          ref={dotOutline}
+          className="cursor-dot-outline text-[8px] text-center font-semibold pt-2 text-black relative z-50"
+        >
+          Case Study
+        </div>
+      ) : (
+        <div
+          ref={dotOutline}
+          className="cursor-dot-outline relative z-50"
+        ></div>
+      )}
+
       {cursor === "default" ? (
         <img
           ref={dot}
@@ -15,12 +28,23 @@ const Cursor = () => {
           alt=""
         />
       ) : (
-        <img
-          ref={dot}
-          src="cursorPointer.png"
-          className="cursor-dot relative z-50"
-          alt=""
-        />
+        <>
+          {cursor === "pointer" ? (
+            <img
+              ref={dot}
+              src="cursorPointer.png"
+              className="cursor-dot relative z-50"
+              alt=""
+            />
+          ) : (
+            <img
+              ref={dot}
+              src="cursorPointer.png"
+              className="cursor-dot relative z-50"
+              alt=""
+            />
+          )}
+        </>
       )}
     </>
   );
