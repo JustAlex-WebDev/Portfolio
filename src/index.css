@@ -2,15 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-div {
-  @apply px-2 w-full max-w-[1140px] mx-auto;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Urbanist", sans-serif; */
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   cursor: none;
@@ -21,25 +16,26 @@ body {
   background-color: #fff;
 }
 
+/* Cursor */
+
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  opacity: 1;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .cursor-dot {
   width: 15px;
   height: 15px;
+  display: none;
 }
 
 .cursor-dot-outline {
   width: 40px;
   height: 40px;
   border: 2px solid #e6e6e6;
+  display: none;
 }
