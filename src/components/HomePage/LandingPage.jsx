@@ -21,7 +21,7 @@ const LandingPage = () => {
             <SiGmail size={22} className="text-red-500" />
           </Link>
         </div>
-        <div className="w-full flex justify-end items-center mt-32 mb-20 animate-iconsAnimation2">
+        <div className="w-full flex justify-end items-center mt-16 sm500:mt-24 sm:mt-32 mb-36 sm500:mb-28 sm:mb-20 animate-iconsAnimation2">
           <Link
             to="https://github.com/JustAlex-WebDev"
             target="_blank"
@@ -34,7 +34,7 @@ const LandingPage = () => {
             <FaGithub size={22} className="text-gray-500" />
           </Link>
         </div>
-        <div className="w-full flex justify-start items-center animate-iconsAnimation3">
+        <div className="w-full flex justify-center sm500:justify-start items-center animate-iconsAnimation3">
           <Link
             to="https://www.linkedin.com/in/alexandar-valov-667567242/"
             target="_blank"
@@ -51,7 +51,7 @@ const LandingPage = () => {
       <div className="w-full md:w-3/4 relative z-50 m-auto mt-24 font-medium flex flex-col gap-6 justify-center items-left">
         <div className="text-sm sm575:text-base">Alexandar Valov</div>
         <div className="text-5xl sm575:text-6xl xmd:text-7xl">Front-End</div>
-        <div className="text-5xl sm575:text-6xl xmd:text-7xl w-[85%] sm465:text-right sm575:text-center md:text-end">
+        <div className="text-5xl sm575:text-6xl xmd:text-7xl w-[85%]  md:text-end">
           Web Developer
         </div>
       </div>

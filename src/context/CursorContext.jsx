@@ -27,7 +27,6 @@ const CursorContextProvider = (props) => {
 
   useEffect(() => {
     document.addEventListener("mousedown", mouseOverEvent);
-    document.addEventListener("mousedown", mouseOverProjectsEvent);
     document.addEventListener("mouseup", mouseOutEvent);
     document.addEventListener("mouseup", mouseOutProjectsEvent);
     document.addEventListener("mousemove", mouseMoveEvent);
@@ -38,7 +37,6 @@ const CursorContextProvider = (props) => {
 
     return () => {
       document.removeEventListener("mousedown", mouseOverEvent);
-      document.removeEventListener("mousedown", mouseOverProjectsEvent);
       document.removeEventListener("mouseup", mouseOutEvent);
       document.removeEventListener("mouseup", mouseOutProjectsEvent);
       document.removeEventListener("mousemove", mouseMoveEvent);
@@ -70,8 +68,10 @@ const CursorContextProvider = (props) => {
     } else {
       setCursor("default");
       dotOutline.current.style.border = "2px solid #e6e6e6";
+      dotOutline.current.style.backgroundColor = "transparent";
       dot.current.style.opacity = 1;
       dot.current.style.transform = "translate(-50%,-50%) scale(1)";
+      dotOutline.current.style.transform = "translate(-50%,-50%) scale(1)";
     }
   };
 

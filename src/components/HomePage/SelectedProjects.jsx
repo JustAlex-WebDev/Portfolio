@@ -18,17 +18,20 @@ const SelectedProjects = () => {
             onMouseOut={mouseOutProjectsEvent}
             className="w-1/2 flex flex-col gap-6 group"
           >
-            <div className="w-full h-[30rem] bg-gray-300">Wonder</div>
+            <div className="w-full h-[30rem] bg-gray-300 rounded-2xl overflow-hidden">
+              <img
+                src="wonderMockup.jpg"
+                alt=""
+                className="h-[30rem] object-cover rounded-2xl group-hover:scale-125 group-hover:animate-panImage  duration-300 ease-in-out"
+              />
+            </div>
             <div className="flex justify-between items-center">
               <div className="flex flex-col gap-1">
                 <div className="text-xl font-medium">Wonder</div>
                 <div className="text-sm">Social Media Application</div>
               </div>
-              <div className="bg-transparent group-hover:bg-orange-400 p-2 rounded-full shadow-gray-300 shadow-none group-hover:shadow-sm duration-300 ease-in-out">
-                <BsArrowRight
-                  size={24}
-                  className="group-hover:-rotate-45 duration-300 ease-in-out"
-                />
+              <div className="bg-transparent group-hover:bg-black text-black group-hover:text-white group-hover:-rotate-45 p-2 rounded-full shadow-gray-300 shadow-none group-hover:shadow-sm duration-300 ease-in-out">
+                <BsArrowRight size={24} />
               </div>
             </div>
           </div>
@@ -37,19 +40,20 @@ const SelectedProjects = () => {
             onMouseOut={mouseOutProjectsEvent}
             className="w-1/2 flex flex-col gap-6 group"
           >
-            <div className="w-full h-[37.5rem] -mt-[7.5rem] bg-gray-300">
-              Art Connection
+            <div className="w-full h-[37.5rem] -mt-[7.5rem] bg-gray-300 rounded-2xl overflow-hidden">
+              <img
+                src="artconnectionMockup.jpg"
+                alt=""
+                className="h-[37.5rem] object-cover rounded-2xl group-hover:scale-125 group-hover:animate-panImage duration-300 ease-in-out"
+              />
             </div>
             <div className="flex justify-between items-center">
               <div className="flex flex-col gap-1">
                 <div className="text-xl font-medium">Art Connection</div>
                 <div className="text-sm">E-Commerce Website</div>
               </div>
-              <div className="bg-transparent group-hover:bg-orange-400 p-2 rounded-full shadow-gray-300 shadow-none group-hover:shadow-sm duration-300 ease-in-out">
-                <BsArrowRight
-                  size={24}
-                  className="group-hover:-rotate-45 duration-300 ease-in-out"
-                />
+              <div className="bg-transparent group-hover:bg-black text-black group-hover:text-white group-hover:-rotate-45 p-2 rounded-full shadow-gray-300 shadow-none group-hover:shadow-sm duration-300 ease-in-out">
+                <BsArrowRight size={24} />
               </div>
             </div>
           </div>
