@@ -6,6 +6,7 @@ module.exports = {
       xxsm: "380px",
       xsm: "500px",
       sm465: "465px",
+      sm500: "500px",
       sm575: "575px",
       sm: "640px",
       md: "768px",
@@ -18,6 +19,7 @@ module.exports = {
         iconsAnimation1: "iconsAnimation1 4s linear infinite",
         iconsAnimation2: "iconsAnimation2 4s linear infinite",
         iconsAnimation3: "iconsAnimation2 3.5s linear infinite",
+        panImage: "panImage 5s linear infinite",
       },
       keyframes: {
         iconsAnimation1: {
@@ -37,6 +39,12 @@ module.exports = {
           "50%": { transform: "translateY(40%)" },
           "50.0001%": { transform: "translateY(40%)" },
           "100%": { transform: "translateY(0%)" },
+        },
+        panImage: {
+          "0%": { objectPosition: "left" },
+          "50%": { objectPosition: "right" },
+          "50.0001%": { objectPosition: "right" },
+          "100%": { objectPosition: "left" },
         },
       },
     },
