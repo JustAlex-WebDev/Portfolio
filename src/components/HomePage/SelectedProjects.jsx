@@ -12,17 +12,17 @@ const SelectedProjects = () => {
           <div>Selected</div>
           <div className="pl-10 pt-2">Projects</div>
         </div>
-        <div className="w-full flex justify-center items-end gap-16">
+        <div className="w-full flex flex-col md:flex-row justify-center items-end gap-16">
           <div
             onMouseOver={mouseOverProjectsEvent}
             onMouseOut={mouseOutProjectsEvent}
-            className="w-1/2 flex flex-col gap-6 group"
+            className="w-full md:w-1/2 flex flex-col gap-6 group"
           >
-            <div className="w-full h-[30rem] bg-gray-300 rounded-2xl overflow-hidden">
+            <div className="w-full h-[27.5rem] bg-gray-300 rounded-2xl overflow-hidden">
               <img
                 src="wonderMockup.jpg"
                 alt=""
-                className="h-[30rem] object-cover rounded-2xl group-hover:scale-125 group-hover:animate-panImage  duration-300 ease-in-out"
+                className="w-full h-[27.5rem] object-cover rounded-2xl group-hover:scale-125 group-hover:animate-panImage  duration-300 ease-in-out"
               />
             </div>
             <div className="flex justify-between items-center">
@@ -38,13 +38,13 @@ const SelectedProjects = () => {
           <div
             onMouseOver={mouseOverProjectsEvent}
             onMouseOut={mouseOutProjectsEvent}
-            className="w-1/2 flex flex-col gap-6 group"
+            className="w-full md:w-1/2 flex flex-col gap-6 group"
           >
-            <div className="w-full h-[37.5rem] -mt-[7.5rem] bg-gray-300 rounded-2xl overflow-hidden">
+            <div className="w-full h-[27.5rem] md:h-[37.5rem] mt-0 md:-mt-[7.5rem] bg-gray-300 rounded-2xl overflow-hidden">
               <img
                 src="artconnectionMockup.jpg"
                 alt=""
-                className="h-[37.5rem] object-cover rounded-2xl group-hover:scale-125 group-hover:animate-panImage duration-300 ease-in-out"
+                className="w-full h-[27.5rem] md:h-[37.5rem] object-cover rounded-2xl group-hover:scale-125 group-hover:animate-panImage duration-300 ease-in-out"
               />
             </div>
             <div className="flex justify-between items-center">
