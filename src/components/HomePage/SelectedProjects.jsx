@@ -8,7 +8,7 @@ const SelectedProjects = () => {
   return (
     <div className="w-full bg-[#f8f8f8] mt-48 mb-12 flex justify-center items-center">
       <div className="w-full max-w-[1140px] px-4 py-20 flex flex-col justify-center items-left gap-8">
-        <div className="text-4xl font-medium mb-20">
+        <div className="text-3xl sm465:text-4xl font-medium mb-20">
           <div>Selected</div>
           <div className="pl-10 pt-2">Projects</div>
         </div>
