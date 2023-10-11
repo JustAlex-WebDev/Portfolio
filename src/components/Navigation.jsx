@@ -1,4 +1,5 @@
 import React from "react";
+import { motion as m } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -10,7 +11,12 @@ const Navigation = () => {
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
 
   return (
-    <div className="w-full max-w-[1140px] m-auto px-4 py-6 text-xs xxsm:text-sm flex justify-between items-center">
+    <m.div
+      initial={{ transform: "translateY(-100%)", opacity: 0 }}
+      animate={{ transform: "translateY(0%)", opacity: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      className="w-full max-w-[1140px] m-auto px-4 py-6 text-xs xxsm:text-sm flex justify-between items-center"
+    >
       <Link
         to="/"
         title="Home"
@@ -57,7 +63,7 @@ const Navigation = () => {
               className="-rotate-90 group-hover:rotate-0 duration-300 ease-in-out"
             />
           </div>
-          <div className="w-28 h-0 group-hover:h-28 opacity-0 group-hover:opacity-100 bg-gray-200 absolute top-8 -left-8 flex flex-col justify-center items-center gap-2 rounded-2xl z-10 duration-300 ease-in-out">
+          <div className="w-28 h-0 group-hover:h-28 opacity-0 group-hover:opacity-100 bg-gray-200 absolute top-8 -left-8 flex flex-col justify-center items-start pl-4 gap-4 rounded-2xl z-50 duration-300 ease-in-out">
             <Link
               to="/"
               title="Gmail"
@@ -91,7 +97,7 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-    </div>
+    </m.div>
   );
 };
 
