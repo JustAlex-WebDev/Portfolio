@@ -72,7 +72,7 @@ const SelectedProjects = () => {
           >
             <div
               className={`${
-                myElementIsVisible2 ? "h-0" : "h-full"
+                myElementIsVisible3 ? "h-0" : "h-full"
               } absolute top-0 md:-top-[7.5rem] left-0 rounded-2xl bg-[#f8f8f8] w-full duration-1000 ease-in-out`}
             ></div>
             <div className="w-full h-[27.5rem] md:h-[37.5rem] mt-0 md:-mt-[7.5rem] bg-gray-300 rounded-2xl overflow-hidden">

@@ -26,19 +26,20 @@ const LandingPage = () => {
                 duration: 0.75,
                 ease: "easeInOut",
               }}
-              className="w-8 sm308:w-10 sm465:w-12 h-8 sm308:h-10 sm465:h-12 bg-red-200 rounded-full flex justify-center items-center hover:scale-125 duration-300 ease-in-out"
             >
-              <m.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  delay: 1.5,
-                  duration: 0.75,
-                  ease: "easeInOut",
-                }}
-              >
-                <SiGmail size={22} className="text-red-500" />
-              </m.div>
+              <div className="w-8 sm308:w-10 sm465:w-12 h-8 sm308:h-10 sm465:h-12 bg-red-200 rounded-full flex justify-center items-center hover:scale-125 duration-300 ease-in-out">
+                <m.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    delay: 1.5,
+                    duration: 0.75,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <SiGmail size={22} className="text-red-500" />
+                </m.div>
+              </div>
             </m.div>
           </Link>
         </div>
@@ -59,19 +60,20 @@ const LandingPage = () => {
                 duration: 0.75,
                 ease: "easeInOut",
               }}
-              className="w-8 sm308:w-10 sm465:w-12 h-8 sm308:h-10 sm465:h-12 bg-gray-200 rounded-full flex justify-center items-center hover:scale-125 duration-300 ease-in-out"
             >
-              <m.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  delay: 2,
-                  duration: 0.75,
-                  ease: "easeInOut",
-                }}
-              >
-                <FaGithub size={22} className="text-gray-500" />
-              </m.div>
+              <div className="w-8 sm308:w-10 sm465:w-12 h-8 sm308:h-10 sm465:h-12 bg-gray-200 rounded-full flex justify-center items-center hover:scale-125 duration-300 ease-in-out">
+                <m.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    delay: 2,
+                    duration: 0.75,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <FaGithub size={22} className="text-gray-500" />
+                </m.div>
+              </div>
             </m.div>
           </Link>
         </div>
@@ -92,19 +94,20 @@ const LandingPage = () => {
                 duration: 0.75,
                 ease: "easeInOut",
               }}
-              className="w-8 sm308:w-10 sm465:w-12 h-8 sm308:h-10 sm465:h-12 bg-blue-200 flex justify-center items-center rounded-full hover:scale-125 duration-300 ease-in-out"
             >
-              <m.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  delay: 1.75,
-                  duration: 0.75,
-                  ease: "easeInOut",
-                }}
-              >
-                <FaLinkedin size={22} className="text-blue-500" />
-              </m.div>
+              <div className="w-8 sm308:w-10 sm465:w-12 h-8 sm308:h-10 sm465:h-12 bg-blue-200 flex justify-center items-center rounded-full hover:scale-125 duration-300 ease-in-out">
+                <m.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    delay: 1.75,
+                    duration: 0.75,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <FaLinkedin size={22} className="text-blue-500" />
+                </m.div>
+              </div>
             </m.div>
           </Link>
         </div>
