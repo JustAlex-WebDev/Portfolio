@@ -50,28 +50,28 @@ const CursorContextProvider = (props) => {
   const toggleCursorVisibility = () => {
     if (cursorVisible.current) {
       dot.current.style.display = "block";
-      dotOutline.current.style.display = "block";
-      dotOutline.current.style.opacity = 1;
+      // dotOutline.current.style.display = "block";
+      // dotOutline.current.style.opacity = 1;
       dot.current.style.opacity = 1;
     } else {
       dot.current.style.display = "none";
-      dotOutline.current.style.display = "none";
+      // dotOutline.current.style.display = "none";
     }
   };
 
   const toggleCursors = () => {
     if (cursorChoice.current) {
       setCursor("pointer");
-      dotOutline.current.style.border = "none";
+      // dotOutline.current.style.border = "none";
       dot.current.style.opacity = 1;
       dot.current.style.transform = "translate(-50%,-50%) scale(1.25)";
     } else {
       setCursor("default");
-      dotOutline.current.style.border = "2px solid #e6e6e6";
-      dotOutline.current.style.backgroundColor = "transparent";
+      // dotOutline.current.style.border = "2px solid #1a1818";
+      // dotOutline.current.style.backgroundColor = "transparent";
       dot.current.style.opacity = 1;
       dot.current.style.transform = "translate(-50%,-50%) scale(1)";
-      dotOutline.current.style.transform = "translate(-50%,-50%) scale(1)";
+      // dotOutline.current.style.transform = "translate(-50%,-50%) scale(1)";
     }
   };
 
