@@ -2,18 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts */
+
+@font-face {
+  font-family: "Ethereal-Thin";
+  src: url("../public/Ethereal-Thin.otf");
+}
+
+.Ethereal-Thin {
+  font-family: "Ethereal-Thin", sans-serif;
+}
+
+@font-face {
+  font-family: "Avegas-Royale-Regular";
+  src: url("../public/Avegas-Royale-Regular.ttf");
+}
+
+.Avegas-Royale-Regular {
+  font-family: "Avegas-Royale-Regular", sans-serif;
+  transform: scale(1.1, 1);
+}
+
+@font-face {
+  font-family: "Avegas-Royale-Bold";
+  src: url("../public/Avegas-Royale-Bold.ttf");
+}
+
+.Avegas-Royale-Bold {
+  font-family: "Avegas-Royale-Bold", sans-serif;
+}
+
+@font-face {
+  font-family: "Avegas-Royale-Italic";
+  src: url("../public/Avegas-Royale-Italic.ttf");
+}
+
+.Avegas-Royale-Italic {
+  font-family: "Avegas-Royale-Italic", sans-serif;
+}
+
+@font-face {
+  font-family: "Avegas-Royale-Bold-Italic";
+  src: url("../public/Avegas-Royale-Bold-Italic.ttf");
+}
+
+.Avegas-Royale-Bold-Italic {
+  font-family: "Avegas-Royale-Bold-Italic", sans-serif;
+}
+
+.Bodoni {
+  font-family: "Bodoni Moda", sans-serif;
+}
+
+/* Basic Configurations */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Avegas-Royale-Regular", sans-serif; */
   scroll-behavior: smooth;
   cursor: none;
 }
 
 body {
   overflow-x: hidden;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #ece7e1;
+  color: #1a1818;
+}
+
+/* Highlighted / Selected Styles */
+
+::-moz-selection {
+  background: #1a1818;
+  color: #ece7e1;
+}
+::-webkit-selection {
+  background: #1a1818;
+  color: #ece7e1;
+}
+::selection {
+  background: #1a1818;
+  color: #ece7e1;
 }
 
 /* Cursor */
@@ -21,7 +93,7 @@ body {
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -36,6 +108,6 @@ body {
 .cursor-dot-outline {
   width: 40px;
   height: 40px;
-  border: 2px solid #e6e6e6;
+  border: 2px solid #1a1818;
   display: none;
 }

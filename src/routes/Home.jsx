@@ -8,11 +8,13 @@ import Navigation from "../components/Navigation";
 const Home = () => {
   return (
     <>
-      <Navigation />
+      <LandingPage />
+
+      {/* <Navigation />
       <LandingPage />
       <SelectedProjects />
       <AboutSection />
-      <ContactSection />
+      <ContactSection /> */}
     </>
   );
 };
