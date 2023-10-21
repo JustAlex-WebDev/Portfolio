@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion as m } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -9,109 +9,101 @@ import { useCursorContext } from "../context/CursorContext";
 const Navigation = () => {
   const location = useLocation();
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
-  const [contactMenu, setContactMenu] = useState(false);
+
+  const [windowWidth, setWindowWidth] = useState(getWindowSize());
+
+  function getWindowSize() {
+    const { innerWidth } = window;
+    return { innerWidth };
+  }
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowWidth(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   return (
-    <m.div
-      initial={{ transform: "translateY(-100%)", opacity: 0 }}
-      animate={{ transform: "translateY(0%)", opacity: 1 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
-      onClick={() => setContactMenu(false)}
-      className="w-full max-w-[1140px] m-auto px-4 py-6 text-xs flex justify-between items-center z-50"
-    >
-      <Link
-        to="/"
-        title="Home"
-        onMouseOver={mouseOverEvent}
-        onMouseOut={mouseOutEvent}
-        className={`${
-          location.pathname === "/"
-            ? "opacity-100"
-            : "opacity-50 hover:opacity-100"
-        } font-medium duration-300 ease-in-out`}
-      >
-        Home
-      </Link>
-      <div className="flex justify-center items-center gap-8">
-        <Link
-          to="/projects"
-          title="Projects"
-          onMouseOver={mouseOverEvent}
-          onMouseOut={mouseOutEvent}
-          className={`${
-            location.pathname === "/projects"
-              ? "opacity-100"
-              : "opacity-50 hover:opacity-100"
-          } font-medium duration-300 ease-in-out`}
-        >
-          Projects
-        </Link>
-        <Link
-          to="/about"
-          title="About me"
-          onMouseOver={mouseOverEvent}
-          onMouseOut={mouseOutEvent}
-          className={`${
-            location.pathname === "/about"
-              ? "opacity-100"
-              : "opacity-50 hover:opacity-100"
-          } font-medium duration-300 ease-in-out`}
-        >
-          About me
-        </Link>
-        <div onClick={(e) => e.preventDefault()} className="group relative">
-          <div
-            onMouseOver={mouseOverEvent}
-            onMouseOut={mouseOutEvent}
-            onClick={() => setContactMenu(true)}
-            title="Contact"
-            className="flex justify-center items-center"
-          >
-            <div className="opacity-50 group-hover:opacity-100 font-medium duration-300 ease-in-out">
-              Contact
-            </div>
-            <IoMdArrowDropdown
-              size={20}
-              className="-rotate-90 group-hover:rotate-0 opacity-50 group-hover:opacity-100 duration-300 ease-in-out"
-            />
-          </div>
-          <div className="w-28 h-0 group-hover:h-28 opacity-0 group-hover:opacity-100 bg-gray-200 absolute top-6 -left-8 flex flex-col justify-center items-start pl-4 gap-4 rounded-2xl z-50 duration-300 ease-in-out overflow-hidden">
+    <div className="z-40 relative">
+      {location.pathname !== "/" ? (
+        <div className="z-50 w-full md:w-24 h-20 md:h-screen flex flex-row md:flex-col justify-start items-center pb-10 pt-10 md:pt-16 fixed text-[11px] sm500:text-xs font-medium">
+          <div className="md:w-16 md:mb-8 ml-8 md:ml-0 mr-8 md:mr-16 md:pt-16 md:-rotate-90">
             <Link
               to="/"
-              title="Gmail"
               onMouseOver={mouseOverEvent}
               onMouseOut={mouseOutEvent}
-              className="flex justify-center items-center gap-2 hover:opacity-50 duration-300 ease-in-out"
+              className="uppercase hover:opacity-50 duration-300 ease-in-out"
             >
-              <SiGmail size={15} />
-              <div>Gmail</div>
+              H o m e
             </Link>
+          </div>
+          <div className="w-0 sm350:w-12 sm500:w-24 md:w-[1px] h-[1px] md:h-24 bg-[#1a1818] md:mt-2 md:mb-20"></div>
+          <div className="md:mb-16 md:pl-10 md:pr-16 md:-rotate-90 w-28 absolute right-8 md:right-auto md:top-auto md:bottom-5">
+            <div className="text-center flex justify-end md:justify-center items-center gap-1 text-[10px] md:text-[11px]">
+              <span>©</span>
+              <span>/</span>
+              <span>2</span>
+              <span>0</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className="z-50 w-full md:w-24 h-20 md:h-screen flex flex-row md:flex-col justify-start items-center pb-10 pt-10 md:pt-16 fixed text-[11px] sm500:text-xs font-medium">
+          <div className="ml-8 md:ml-0 mr-8 md:mr-16 md:pt-16 md:-rotate-90">
             <Link
-              to="https://www.linkedin.com/in/alexandar-valov-667567242/"
+              to="/"
               target="_blank"
-              title="LinkedIn"
               onMouseOver={mouseOverEvent}
               onMouseOut={mouseOutEvent}
-              className="flex justify-center items-center gap-2 hover:opacity-50 duration-300 ease-in-out"
+              className="hover:opacity-50 duration-300 ease-in-out"
             >
-              <FaLinkedin size={15} />
-              <div>LinkedIn</div>
+              {windowWidth.innerWidth < 500 ? "G M" : "Gmail"}
             </Link>
+          </div>
+          <div className="mr-8 md:mr-16 md:pt-16 md:-rotate-90">
             <Link
               to="https://github.com/JustAlex-WebDev"
               target="_blank"
-              title="GitHub"
               onMouseOver={mouseOverEvent}
               onMouseOut={mouseOutEvent}
-              className="flex justify-center items-center gap-2 hover:opacity-50 duration-300 ease-in-out"
+              className="hover:opacity-50 duration-300 ease-in-out"
             >
-              <FaGithub size={15} />
-              <div>GitHub</div>
+              {windowWidth.innerWidth < 500 ? "G H" : "GitHub"}
             </Link>
           </div>
+          <div className="md:mb-8 mr-8 md:mr-16 md:pt-16 md:-rotate-90">
+            <Link
+              to="https://www.linkedin.com/in/alexandar-valov-667567242/"
+              target="_blank"
+              onMouseOver={mouseOverEvent}
+              onMouseOut={mouseOutEvent}
+              className="hover:opacity-50 duration-300 ease-in-out"
+            >
+              {windowWidth.innerWidth < 500 ? "L I" : "LinkedIn"}
+            </Link>
+          </div>
+          <div className="w-0 sm350:w-12 sm500:w-24 md:w-[1px] h-[1px] md:h-24 bg-[#1a1818] md:mt-2 md:mb-20"></div>
+          <div className="md:mb-16 md:pl-10 md:pr-16 md:-rotate-90 w-28 absolute right-8 md:right-auto md:top-auto md:bottom-5">
+            <div className="text-center flex justify-end md:justify-center items-center gap-1 text-[10px] md:text-[11px]">
+              <span>©</span>
+              <span>/</span>
+              <span>2</span>
+              <span>0</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </m.div>
+      )}
+    </div>
   );
 };
 
