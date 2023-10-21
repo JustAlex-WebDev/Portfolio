@@ -1,21 +1,13 @@
 import React from "react";
-import AboutSection from "../components/HomePage/AboutSection";
-import ContactSection from "../components/HomePage/ContactSection";
 import LandingPage from "../components/HomePage/LandingPage";
-import SelectedProjects from "../components/HomePage/SelectedProjects";
-import Navigation from "../components/Navigation";
+import LoadingAnimation from "../components/LoadingAnimation";
 
 const Home = () => {
   return (
-    <>
+    <div className="z-40 relative">
+      <LoadingAnimation />
       <LandingPage />
-
-      {/* <Navigation />
-      <LandingPage />
-      <SelectedProjects />
-      <AboutSection />
-      <ContactSection /> */}
-    </>
+    </div>
   );
 };
 

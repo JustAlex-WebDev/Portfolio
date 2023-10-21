@@ -3,16 +3,6 @@
 @tailwind utilities;
 
 /* Fonts */
-
-@font-face {
-  font-family: "Ethereal-Thin";
-  src: url("../public/Ethereal-Thin.otf");
-}
-
-.Ethereal-Thin {
-  font-family: "Ethereal-Thin", sans-serif;
-}
-
 @font-face {
   font-family: "Avegas-Royale-Regular";
   src: url("../public/Avegas-Royale-Regular.ttf");
@@ -55,7 +45,6 @@
 }
 
 /* Basic Configurations */
-
 * {
   margin: 0;
   padding: 0;
@@ -73,8 +62,7 @@ body {
   color: #1a1818;
 }
 
-/* Highlighted / Selected Styles */
-
+/* Highlighted / On Selection Styles */
 ::-moz-selection {
   background: #1a1818;
   color: #ece7e1;
@@ -89,7 +77,6 @@ body {
 }
 
 /* Cursor */
-
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
