@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { useCursorContext } from "../../context/CursorContext";
 
-const LandingPage = () => {
+const HomePage = () => {
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
 
   return (
@@ -33,7 +33,7 @@ const LandingPage = () => {
                 duration: 0.5,
                 delay: 0.75,
               }}
-              className="text-xs sm500:text-sm"
+              className="text-[12px] leading-5 sm500:text-[14px] sm500:leading-7"
             >
               Front-End Web Developer / UX-UI Designer
             </m.div>
@@ -46,7 +46,7 @@ const LandingPage = () => {
                 duration: 0.5,
                 delay: 0.75,
               }}
-              className="text-xs sm500:text-sm"
+              className="text-[12px] leading-5 sm500:text-[14px] sm500:leading-7"
             >
               Passionate about developing responsive, visually appealing and
               complex applications.
@@ -65,7 +65,7 @@ const LandingPage = () => {
         className="w-full xl1100:w-[70%] h-auto xl1100:h-full flex justify-center items-start xl1100:items-center"
       >
         <div className="w-full md:w-3/4 xl1100:w-full flex flex-col justify-center items-start pl-0 sm500:pl-4 md:pl-0 xl:pl-20">
-          <div className="uppercase text-[16vw] sm500:text-[18vw] md:text-[13vw] xl1100:text-[11vw] tracking-tighter Avegas-Royale-Regular -mb-[7%] sm500:-mb-[10%] md:-mb-[11%]">
+          <div className="uppercase text-[16vw] sm500:text-[18vw] md:text-[13vw] xl1100:text-[11vw] tracking-tighter -mb-[7%] sm500:-mb-[10%] md:-mb-[11%] -ml-[3%]">
             <Link
               to="/work"
               title="Work"
@@ -76,7 +76,7 @@ const LandingPage = () => {
               work
             </Link>
           </div>
-          <div className="uppercase text-[16vw] sm500:text-[18vw] md:text-[13vw] xl1100:text-[11vw] tracking-tighter Avegas-Royale-Regular -mb-[7%] sm500:-mb-[10%] md:-mb-[11%]">
+          <div className="uppercase text-[16vw] sm500:text-[18vw] md:text-[13vw] xl1100:text-[11vw] tracking-tighter -mb-[7%] sm500:-mb-[10%] md:-mb-[11%] -ml-[3%]">
             <Link
               to="/about"
               title="About"
@@ -87,7 +87,7 @@ const LandingPage = () => {
               about
             </Link>
           </div>
-          <div className="uppercase text-[16vw] sm500:text-[18vw] md:text-[13vw] xl1100:text-[11vw] tracking-tighter Avegas-Royale-Regular">
+          <div className="uppercase text-[16vw] sm500:text-[18vw] md:text-[13vw] xl1100:text-[11vw] tracking-tighter -ml-[3%]">
             <Link
               to="/contact"
               title="Contact"
@@ -104,4 +104,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default HomePage;

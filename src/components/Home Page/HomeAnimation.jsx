@@ -1,7 +1,7 @@
 import React from "react";
 import { motion as m } from "framer-motion";
 
-const LoadingAnimation = () => {
+const HomeAnimation = () => {
   return (
     <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
       <m.div
@@ -26,4 +26,4 @@ const LoadingAnimation = () => {
   );
 };
 
-export default LoadingAnimation;
+export default HomeAnimation;
