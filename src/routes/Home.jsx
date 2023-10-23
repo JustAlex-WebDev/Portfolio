@@ -1,12 +1,12 @@
 import React from "react";
-import LandingPage from "../components/HomePage/LandingPage";
-import LoadingAnimation from "../components/LoadingAnimation";
+import HomePage from "../components/Home Page/HomePage";
+import HomeAnimation from "../components/Home Page/HomeAnimation";
 
 const Home = () => {
   return (
-    <div className="z-40 relative">
-      <LoadingAnimation />
-      <LandingPage />
+    <div className="z-30 relative">
+      <HomeAnimation />
+      <HomePage />
     </div>
   );
 };
