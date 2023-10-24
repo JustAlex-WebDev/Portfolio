@@ -133,7 +133,9 @@ const CursorContextProvider = (props) => {
     endX.current = e.pageX;
     endY.current = e.pageY;
 
-    dot.current.style.top = endY.current + "px";
+    if (endY.current <= window.innerHeight * 2) {
+      dot.current.style.top = endY.current + "px";
+    }
     dot.current.style.left = endX.current + "px";
   };
 

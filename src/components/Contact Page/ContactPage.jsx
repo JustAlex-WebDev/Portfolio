@@ -10,7 +10,7 @@ const ContactPage = () => {
     <div className="bg-[#1a1818] text-[#ece7e1] w-full h-screen flex justify-start items-start md:items-center pt-28 md:pt-0 px-8 md:px-20">
       <div className="w-full xl1100:w-[50%] h-auto xl1100:h-full flex justify-start md:justify-center xl1100:justify-end items-end xl1100:items-center">
         <div className="w-full sm350:w-3/4 h-auto flex flex-col justify-center items-start gap-4">
-          <div className="overflow-hidden -ml-2 xl1100:-mb-10">
+          <div className="overflow-hidden sm:-ml-1 mb-8 sm500:mb-4 xl1100:-mb-[10%]">
             <m.div
               initial={{ transform: "translateY(100%)" }}
               animate={{ transform: "translateY(0%)" }}
@@ -31,7 +31,7 @@ const ContactPage = () => {
                 duration: 0.5,
                 delay: 0.75,
               }}
-              className="w-[85%] flex flex-col gap-4"
+              className="w-full sm:w-[85%] flex flex-col gap-4"
             >
               <div className="text-[12px] leading-5 sm500:text-[14px] sm500:leading-7">
                 Need a Front-End Developer who is eager to bring creativity and
@@ -51,15 +51,6 @@ const ContactPage = () => {
                 </div>
                 <div className="flex gap-2">
                   <span>On the Internet:</span>
-                  <Link
-                    to="https://github.com/JustAlex-WebDev"
-                    target="_blank"
-                    onMouseOver={mouseOverEvent}
-                    onMouseOut={mouseOutEvent}
-                    className="underline underline-offset-2 underline-[#ece7e194] hover:opacity-50"
-                  >
-                    Github
-                  </Link>{" "}
                   <Link
                     to="https://www.linkedin.com/in/alexandar-valov-667567242/"
                     target="_blank"

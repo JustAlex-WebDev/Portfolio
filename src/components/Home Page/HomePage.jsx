@@ -64,7 +64,7 @@ const HomePage = () => {
         }}
         className="w-full xl1100:w-[70%] h-auto xl1100:h-full flex justify-center items-start xl1100:items-center"
       >
-        <div className="w-full md:w-3/4 xl1100:w-full flex flex-col justify-center items-start pl-0 sm500:pl-4 md:pl-0 xl:pl-20">
+        <div className="w-full md:w-3/4 xl1100:w-full flex flex-col justify-center items-start pl-2 sm500:pl-4 md:pl-0 xl:pl-20">
           <div className="uppercase text-[16vw] sm500:text-[18vw] md:text-[13vw] xl1100:text-[11vw] tracking-tighter -mb-[7%] sm500:-mb-[10%] md:-mb-[11%] -ml-[3%]">
             <Link
               to="/work"
