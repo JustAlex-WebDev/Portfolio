@@ -8,6 +8,9 @@ import Work from "./routes/Work";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
 import Navigation from "./components/Navigation";
+import ArtConnection from "./routes/ArtConnection";
+import Wonder from "./routes/Wonder";
+import CryptoBase from "./routes/CryptoBase";
 
 function App() {
   const location = useLocation();
@@ -21,9 +24,12 @@ function App() {
         <AnimatePresence initial={true}>
           <Routes location={location} key={location.pathName}>
             <Route path="/" element={<Home />} />
-            <Route path="/work" element={<Work />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/art-connection" element={<ArtConnection />} />
+            <Route path="/wonder" element={<Wonder />} />
+            <Route path="/crypto-base" element={<CryptoBase />} />
           </Routes>
         </AnimatePresence>
       </CursorContextProvider>
