@@ -67,7 +67,7 @@ const WorkPage = () => {
       >
         <div className="w-full md:w-3/4 xl1100:w-full flex flex-col justify-center items-start gap-8">
           <Link
-            to="/"
+            to="/art-connection"
             title="Art Connection"
             onMouseOver={mouseOverEvent}
             onMouseOut={mouseOutEvent}
@@ -89,7 +89,7 @@ const WorkPage = () => {
             </div>
           </Link>
           <Link
-            to="/"
+            to="/wonder"
             title="Wonder"
             onMouseOver={mouseOverEvent}
             onMouseOut={mouseOutEvent}
@@ -111,7 +111,7 @@ const WorkPage = () => {
             </div>
           </Link>
           <Link
-            to="/"
+            to="/cryto-base"
             title="Crypto Base"
             onMouseOver={mouseOverEvent}
             onMouseOut={mouseOutEvent}
