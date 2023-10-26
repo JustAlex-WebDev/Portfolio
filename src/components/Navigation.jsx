@@ -40,14 +40,27 @@ const Navigation = () => {
       {location.pathname !== "/" ? (
         <div className="z-50 w-full md:w-24 h-20 md:h-screen flex flex-row md:flex-col justify-start items-center pb-10 pt-10 md:pt-16 absolute md:fixed text-[11px] sm500:text-xs font-medium">
           <div className="md:w-16 md:mb-8 ml-8 md:ml-0 mr-8 md:mr-16 md:pt-16 md:-rotate-90">
-            <Link
-              to="/"
-              onMouseOver={mouseOverEvent}
-              onMouseOut={mouseOutEvent}
-              className="uppercase py-2 hover:opacity-50 duration-300 ease-in-out"
-            >
-              H o m e
-            </Link>
+            {location.pathname === "/art-connection" ||
+            location.pathname === "/wonder" ||
+            location.pathname === "/crypto-base" ? (
+              <Link
+                to="/"
+                onMouseOver={mouseOverEvent}
+                onMouseOut={mouseOutEvent}
+                className="uppercase py-2 hover:opacity-50 duration-300 ease-in-out"
+              >
+                W o r k
+              </Link>
+            ) : (
+              <Link
+                to="/work"
+                onMouseOver={mouseOverEvent}
+                onMouseOut={mouseOutEvent}
+                className="uppercase py-2 hover:opacity-50 duration-300 ease-in-out"
+              >
+                H o m e
+              </Link>
+            )}
           </div>
           <div
             className={`${
