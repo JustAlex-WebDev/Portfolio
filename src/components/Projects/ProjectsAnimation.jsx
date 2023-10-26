@@ -3,7 +3,7 @@ import { motion as m } from "framer-motion";
 
 const ProjectsAnimation = () => {
   return (
-    <div className="absolute top-24 md:top-0 left-0 w-full h-full overflow-hidden">
+    <div className="absolute top-24 md:top-0 left-0 w-full h-screen overflow-hidden">
       <m.div
         initial={{ transform: "translateY(-100%)" }}
         animate={{ transform: "translateY(-30%)" }}
