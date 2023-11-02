@@ -44,7 +44,7 @@ const Navigation = () => {
             location.pathname === "/wonder" ||
             location.pathname === "/crypto-base" ? (
               <Link
-                to="/"
+                to="/work"
                 onMouseOver={mouseOverEvent}
                 onMouseOut={mouseOutEvent}
                 className="uppercase py-2 hover:opacity-50 duration-300 ease-in-out"
@@ -53,7 +53,7 @@ const Navigation = () => {
               </Link>
             ) : (
               <Link
-                to="/work"
+                to="/"
                 onMouseOver={mouseOverEvent}
                 onMouseOut={mouseOutEvent}
                 className="uppercase py-2 hover:opacity-50 duration-300 ease-in-out"

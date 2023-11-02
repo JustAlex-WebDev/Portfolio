@@ -83,8 +83,10 @@ const WorkPage = () => {
               <div className="text-[11px] md:text-xs font-medium uppercase -mt-[10%] sm500:-mt-[5%]">
                 e-commerce website
               </div>
-              <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase -mt-[10%] sm500:-mt-[5%] py-1 px-2 rounded-2xl">
-                new
+              <div className="-mt-[10%] sm500:-mt-[5%]">
+                <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase  px-2 pt-2 pb-1 rounded-2xl">
+                  new
+                </div>
               </div>
             </div>
           </Link>
@@ -105,8 +107,10 @@ const WorkPage = () => {
               <div className="text-[11px] md:text-xs font-medium uppercase -mt-[10%] sm500:-mt-[5%]">
                 social media application
               </div>
-              <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase -mt-[10%] sm500:-mt-[5%] py-1 px-2 rounded-2xl">
-                new
+              <div className="-mt-[10%] sm500:-mt-[5%]">
+                <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase  px-2 pt-2 pb-1 rounded-2xl">
+                  new
+                </div>
               </div>
             </div>
           </Link>
