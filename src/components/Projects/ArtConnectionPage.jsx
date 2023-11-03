@@ -1,10 +1,69 @@
-import React from "react";
-import { motion as m } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { motion as m, useTransform, useScroll } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useCursorContext } from "../../context/CursorContext";
+import Lenis from "@studio-freight/lenis";
+import useDimension from "../../hooks/useDimension";
 
 const ArtConnectionPage = () => {
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
+  const container = useRef(null);
+  const dimension = useDimension();
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+  const y1 = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0, dimension.width < 768 ? dimension.height * 2 : dimension.height * 2.5]
+  );
+  const y2 = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [
+      0,
+      dimension.width < 640
+        ? dimension.height * 1.8
+        : dimension.width < 768
+        ? dimension.height * 2.4
+        : dimension.width < 1100
+        ? dimension.height * 2.7
+        : dimension.width < 1280
+        ? dimension.height * 3
+        : dimension.height * 3.3,
+    ]
+  );
+  const y3 = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0, dimension.height * 1.25]
+  );
+  const y4 = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [
+      0,
+      dimension.width < 640
+        ? dimension.height * 1.8
+        : dimension.width < 768
+        ? dimension.height * 2.4
+        : dimension.width < 1280
+        ? dimension.height * 2.7
+        : dimension.height * 3,
+    ]
+  );
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <>
@@ -34,10 +93,10 @@ const ArtConnectionPage = () => {
             animate={{ transform: "translateY(0%)" }}
             transition={{
               duration: 0.5,
-              delay: 1.25,
+              delay: 1.5,
               ease: "easeOut",
             }}
-            className="w-[100%] sm500:w-[70%] md:w-[45%] Avegas-Royale-Regular text-[5vw] sm350:text-[4vw] sm500:text-[3.25vw] sm:text-[3vw] md:text-[2.5vw] xl1100:text-[2.5vw] leading-[120%]"
+            className="w-[100%] sm500:w-[70%] md:w-[45%] Avegas-Royale-Regular text-[5vw] sm350:text-[4vw] sm500:text-[3.25vw] sm:text-[3vw] md:text-[2.5vw] leading-[120%]"
           >
             Art Connection is the leading provider of framed art to designers,
             galleries, and art retailers with more than 32 years in the
@@ -93,7 +152,7 @@ const ArtConnectionPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full sm500:w-[85%] md:w-[65%] h-[12.5rem] sm350:h-[15rem] sm500:h-[20rem] sm:h-[25rem] lg:h-[30rem] xl1100:h-[40rem] xxl:h-[50rem]">
+        <div className="w-full sm500:w-[85%] md:w-[65%] h-[12.5rem] sm350:h-[15rem] sm500:h-[20rem] sm:h-[25rem] lg:h-[30rem] xl1100:h-[40rem] xxl:h-[50rem] rounded-[1vw] overflow-hidden">
           <img
             src="./artconnectionMockup.jpg"
             alt=""
@@ -126,12 +185,148 @@ const ArtConnectionPage = () => {
             increasing customer base and team.
           </div>
         </div>
-        <div className="w-full sm350:w-[90%] md:w-[75%] h-auto">
-          <img
-            src="./artconnectionMockup2.jpg"
-            alt=""
-            className="w-full h-full object-cover object-center"
-          />
+        <div className="w-full sm500:w-[85%] md:w-[65%]">
+          <div
+            ref={container}
+            className="h-screen sm:h-[125vh] md:h-[150vh] xl:h-[175vh] flex gap-[2vw] rounded-[1vw] overflow-hidden"
+          >
+            {dimension.width < 640 ? null : (
+              <m.div
+                style={{ y: y1 }}
+                className="w-1/4 h-full flex flex-col gap-[2vw] relative -top-[70%] xl:-top-[50%]"
+              >
+                <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                  <img
+                    src="./artconnectionMockup3.png"
+                    alt=""
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                  <img
+                    src="./artconnectionMockup5.png"
+                    alt=""
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                  <img
+                    src="./artconnectionMockup4.png"
+                    alt=""
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                  <img
+                    src="./artconnectionMockup3.png"
+                    alt=""
+                    className="w-full h-full object-cover object-bottom"
+                  />
+                </div>
+              </m.div>
+            )}
+            <m.div
+              style={{ y: y2 }}
+              className="w-1/2 sm500:w-1/3 sm:w-1/4 h-full flex flex-col gap-[2vw] relative -top-[90%] sm:-top-[95%]"
+            >
+              <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                <img
+                  src="./artconnectionMockup9.png"
+                  alt=""
+                  className="w-full h-full object-cover object-bottom"
+                />
+              </div>
+              <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                <img
+                  src="./artconnectionMockup6.jpeg"
+                  alt=""
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                <img
+                  src="./artconnectionMockup4.png"
+                  alt=""
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                <img
+                  src="./artconnectionMockup6.jpeg"
+                  alt=""
+                  className="w-full h-full object-cover object-bottom"
+                />
+              </div>
+            </m.div>
+            <m.div
+              style={{ y: y3 }}
+              className="w-1/2 sm500:w-1/3 sm:w-1/4 h-full flex flex-col gap-[2vw] relative -top-[60%] sm:-top-[40%] xl:-top-[25%]"
+            >
+              <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                <img
+                  src="./artconnectionMockup7.png"
+                  alt=""
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                <img
+                  src="./artconnectionMockup8.png"
+                  alt=""
+                  className="w-full h-full object-cover object-center sm500:object-top"
+                />
+              </div>
+              <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                <img
+                  src="./artconnectionMockup7.png"
+                  alt=""
+                  className="w-full h-full object-cover object-bottom"
+                />
+              </div>
+              <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                <img
+                  src="./artconnectionMockup9.png"
+                  alt=""
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </m.div>
+            {dimension.width < 500 ? null : (
+              <m.div
+                style={{ y: y4 }}
+                className="w-1/3 sm:w-1/4 h-full flex flex-col gap-[2vw] relative -top-[90%] sm:-top-[100%]"
+              >
+                <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                  <img
+                    src="./artconnectionMockup8.png"
+                    alt=""
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                  <img
+                    src="./artconnectionMockup4.png"
+                    alt=""
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                  <img
+                    src="./artconnectionMockup9.png"
+                    alt=""
+                    className="w-full h-full object-cover object-bottom"
+                  />
+                </div>
+                <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
+                  <img
+                    src="./artconnectionMockup7.png"
+                    alt=""
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </m.div>
+            )}
+          </div>
         </div>
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
@@ -163,6 +358,13 @@ const ArtConnectionPage = () => {
             Firebase for hosting and stable/reliable database and Stripe for
             payment system integration.
           </div>
+        </div>
+        <div className="w-full sm500:w-[85%] md:w-[65%] h-auto rounded-[1vw] overflow-hidden">
+          <img
+            src="./artconnectionMockup2.jpg"
+            alt=""
+            className="w-full h-full object-cover object-center"
+          />
         </div>
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
