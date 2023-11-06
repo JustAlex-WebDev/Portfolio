@@ -75,8 +75,7 @@ body {
 }
 
 /* Cursor */
-.cursor-dot,
-.cursor-dot-outline {
+.cursor-dot {
   pointer-events: none;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -87,12 +86,5 @@ body {
 .cursor-dot {
   width: 15px;
   height: 15px;
-  display: none;
-}
-
-.cursor-dot-outline {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #1a1818;
   display: none;
 }

@@ -84,7 +84,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      {/* <div className="absolute z-40 top-20 right-[22.5%] w-[25rem] h-[30rem] bg-red-800"></div> */}
     </div>
   );
 };

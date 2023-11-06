@@ -14,35 +14,21 @@ module.exports = {
     },
     extend: {
       animation: {
-        iconsAnimation1: "iconsAnimation1 4s linear infinite",
-        iconsAnimation2: "iconsAnimation2 4s linear infinite",
-        iconsAnimation3: "iconsAnimation2 3.5s linear infinite",
-        panImage: "panImage 5s linear infinite",
+        panImage: "panImage 20s linear infinite",
+        scaleImage: "scaleImage 5s linear infinite",
       },
       keyframes: {
-        iconsAnimation1: {
-          "0%": { transform: "translateY(0%)" },
-          "50%": { transform: "translateY(50%)" },
-          "50.0001%": { transform: "translateY(50%)" },
-          "100%": { transform: "translateY(0%)" },
-        },
-        iconsAnimation2: {
-          "0%": { transform: "translateY(0%)" },
-          "50%": { transform: "translateY(-60%)" },
-          "50.0001%": { transform: "translateY(-60%)" },
-          "100%": { transform: "translateY(0%)" },
-        },
-        iconsAnimation3: {
-          "0%": { transform: "translateY(0%)" },
-          "50%": { transform: "translateY(40%)" },
-          "50.0001%": { transform: "translateY(40%)" },
-          "100%": { transform: "translateY(0%)" },
-        },
         panImage: {
-          "0%": { objectPosition: "left" },
-          "50%": { objectPosition: "right" },
-          "50.0001%": { objectPosition: "right" },
-          "100%": { objectPosition: "left" },
+          "0%": { objectPosition: "top" },
+          "50%": { objectPosition: "bottom" },
+          "50.0001%": { objectPosition: "bottom" },
+          "100%": { objectPosition: "top" },
+        },
+        scaleImage: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.25)" },
+          "50.0001%": { transform: "scale(1.25)" },
+          "100%": { transform: "scale(1)" },
         },
       },
     },

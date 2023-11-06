@@ -1,8 +1,6 @@
 import React from "react";
 import { motion as m } from "framer-motion";
-import { Link, useLocation } from "react-router-dom";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
+import { Link } from "react-router-dom";
 import { useCursorContext } from "../../context/CursorContext";
 
 const HomePage = () => {
