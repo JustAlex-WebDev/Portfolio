@@ -5,12 +5,10 @@ import { isMobile } from "react-device-detect";
 
 const Cursor = () => {
   const location = useLocation();
-  const { dot, dotOutline, cursor } = useCursorContext();
+  const { dot, cursor } = useCursorContext();
 
   return (
     <div className={`${isMobile ? "hidden" : "block"}`}>
-      <div ref={dotOutline} className="cursor-dot-outline relative z-50"></div>
-
       {cursor === "default" ? (
         <>
           {location.pathname === "/work" || location.pathname === "/contact" ? (

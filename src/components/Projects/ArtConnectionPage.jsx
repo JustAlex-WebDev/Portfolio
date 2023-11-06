@@ -7,6 +7,8 @@ import useDimension from "../../hooks/useDimension";
 
 const ArtConnectionPage = () => {
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
+
+  // On Scroll Animation/Functionallity
   const container = useRef(null);
   const dimension = useDimension();
   const { scrollYProgress } = useScroll({
@@ -54,6 +56,7 @@ const ArtConnectionPage = () => {
     ]
   );
 
+  // Smooth Scrolling
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -68,6 +71,7 @@ const ArtConnectionPage = () => {
   return (
     <>
       <div className="bg-[#ece7e1] text-[#1a1818] w-full h-screen flex justify-center items-center -mb-72 md:-mb-20">
+        {/* Title */}
         <div className="relative z-50 w-full h-[15%] sm350:h-1/2 sm:h-[80%] md:h-[70%] flex justify-center items-end text-[#ece7e1]">
           <div className="w-full text-center overflow-hidden px-4">
             <m.div
@@ -87,6 +91,7 @@ const ArtConnectionPage = () => {
         </div>
       </div>
       <div className="bg-[#ece7e1] text-[#1a1818] w-full h-full flex flex-col justify-center items-center gap-16 sm350:gap-24 xl1100:gap-32 xxl:gap-48 mb-20 px-8 mt-0 sm350:mt-48 sm:mt-80 md:mt-16 xl1100:mt-24 ">
+        {/* About the project */}
         <div className="overflow-hidden w-full flex justify-center items-center text-center">
           <m.div
             initial={{ transform: "translateY(100%)" }}
@@ -103,6 +108,7 @@ const ArtConnectionPage = () => {
             industry.
           </m.div>
         </div>
+        {/* Role / Responsibilities / GitHub / URL */}
         <div className="w-full md:w-[85%] xl1100:w-[65%] flex flex-col xl1100:flex-row justify-center items-center xl1100:items-start gap-4 sm500:gap-12 text-[8px] sm350:text-[10px] sm500:text-xs xl1100:text-sm xl:text-base">
           <div className="w-full sm500:w-[85%] md:w-[75%] xl1100:w-1/2 flex justify-between gap-4 sm500:gap-12">
             <div className="w-1/2 flex flex-col gap-4">
@@ -152,13 +158,15 @@ const ArtConnectionPage = () => {
             </div>
           </div>
         </div>
+        {/* First Mockup */}
         <div className="w-full sm500:w-[85%] md:w-[65%] h-[12.5rem] sm350:h-[15rem] sm500:h-[20rem] sm:h-[25rem] lg:h-[30rem] xl1100:h-[40rem] xxl:h-[50rem] rounded-[1vw] overflow-hidden">
           <img
             src="./artconnectionMockup.jpg"
             alt=""
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover animate-panImage hover:scale-125 duration-300 ease-in-out"
           />
         </div>
+        {/* Challenge */}
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
             Challenge
@@ -185,6 +193,7 @@ const ArtConnectionPage = () => {
             increasing customer base and team.
           </div>
         </div>
+        {/* On Scroll Gallery */}
         <div className="w-full sm500:w-[85%] md:w-[65%]">
           <div
             ref={container}
@@ -197,30 +206,30 @@ const ArtConnectionPage = () => {
               >
                 <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                   <img
-                    src="./artconnectionMockup3.png"
+                    src="images/poster2-img1-light.jpg"
                     alt=""
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                   <img
-                    src="./artconnectionMockup5.png"
+                    src="images/poster2-img2-dark.jpg"
                     alt=""
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                   <img
-                    src="./artconnectionMockup4.png"
+                    src="images/poster4-img3-light.jpg"
                     alt=""
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                   <img
-                    src="./artconnectionMockup3.png"
+                    src="images/poster4-img4-dark.jpg"
                     alt=""
-                    className="w-full h-full object-cover object-bottom"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </m.div>
@@ -231,30 +240,30 @@ const ArtConnectionPage = () => {
             >
               <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                 <img
-                  src="./artconnectionMockup9.png"
+                  src="images/poster4-img5-dark.jpg"
                   alt=""
-                  className="w-full h-full object-cover object-bottom"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                 <img
-                  src="./artconnectionMockup6.jpeg"
+                  src="images/poster2-img6-light.jpg"
                   alt=""
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                 <img
-                  src="./artconnectionMockup4.png"
+                  src="images/poster2-img7-dark.jpg"
                   alt=""
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                 <img
-                  src="./artconnectionMockup6.jpeg"
+                  src="images/poster4-img8-light.jpg"
                   alt=""
-                  className="w-full h-full object-cover object-bottom"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </m.div>
@@ -264,28 +273,28 @@ const ArtConnectionPage = () => {
             >
               <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                 <img
-                  src="./artconnectionMockup7.png"
+                  src="images/poster4-img9-dark.jpg"
                   alt=""
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                 <img
-                  src="./artconnectionMockup8.png"
+                  src="images/poster1-img10-light.jpg"
                   alt=""
-                  className="w-full h-full object-cover object-center sm500:object-top"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                 <img
-                  src="./artconnectionMockup7.png"
+                  src="images/poster3-img3-dark.jpg"
                   alt=""
-                  className="w-full h-full object-cover object-bottom"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                 <img
-                  src="./artconnectionMockup9.png"
+                  src="images/poster3-img2-light.jpg"
                   alt=""
                   className="w-full h-full object-cover object-top"
                 />
@@ -298,36 +307,37 @@ const ArtConnectionPage = () => {
               >
                 <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                   <img
-                    src="./artconnectionMockup8.png"
+                    src="images/poster1-img4-light.jpg"
                     alt=""
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                   <img
-                    src="./artconnectionMockup4.png"
+                    src="images/poster1-img6-dark.jpg"
                     alt=""
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                   <img
-                    src="./artconnectionMockup9.png"
+                    src="images/poster3-img5-light.jpg"
                     alt=""
-                    className="w-full h-full object-cover object-bottom"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-full relative rounded-[1vw] overflow-hidden">
                   <img
-                    src="./artconnectionMockup7.png"
+                    src="images/poster3-img8-dark.jpg"
                     alt=""
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </m.div>
             )}
           </div>
         </div>
+        {/* Process */}
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
             Process
@@ -359,11 +369,12 @@ const ArtConnectionPage = () => {
             payment system integration.
           </div>
         </div>
+        {/* Second Mockup */}
         <div className="w-full sm500:w-[85%] md:w-[65%] h-auto rounded-[1vw] overflow-hidden">
           <img
             src="./artconnectionMockup2.jpg"
             alt=""
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center animate-scaleImage duration-300 ease-in-out"
           />
         </div>
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
@@ -386,7 +397,8 @@ const ArtConnectionPage = () => {
             </span>
           </div>
         </div>
-        <div className="w-full flex flex-col justify-center items-center gap-4 sm:gap-8 md:gap-12">
+        {/* Check it out button */}
+        <div className="w-full flex flex-col justify-center items-center gap-8 sm:gap-12">
           <div className="Avegas-Royale-Regular text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
             Check it out.
           </div>
@@ -395,7 +407,7 @@ const ArtConnectionPage = () => {
             target="_blank"
             onMouseOver={mouseOverEvent}
             onMouseOut={mouseOutEvent}
-            className="bg-[#1a1818] text-[#ece7e1] w-auto py-4 px-8 md:px-10 Avegas-Royale-Regular text-[2vw] md:text-[1vw] text-center rounded-full hover:opacity-50 duration-300 ease-in-out"
+            className="bg-[#1a1818] text-[#ece7e1] w-auto py-4 px-8 md:px-10 Avegas-Royale-Regular text-[2.5vw] md:text-[1vw] text-center rounded-full hover:opacity-50 duration-300 ease-in-out"
           >
             Art Connection
           </Link>

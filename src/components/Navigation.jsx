@@ -1,33 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { motion as m } from "framer-motion";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
+import useDimension from "../hooks/useDimension";
 import { useCursorContext } from "../context/CursorContext";
 
 const Navigation = () => {
   const location = useLocation();
+  const dimension = useDimension();
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
-
-  const [windowWidth, setWindowWidth] = useState(getWindowSize());
-
-  function getWindowSize() {
-    const { innerWidth } = window;
-    return { innerWidth };
-  }
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowWidth(getWindowSize());
-    }
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
 
   return (
     <div
@@ -89,7 +68,7 @@ const Navigation = () => {
               onMouseOut={mouseOutEvent}
               className="p-2 hover:opacity-50 duration-300 ease-in-out"
             >
-              {windowWidth.innerWidth < 500 ? "G M" : "Gmail"}
+              {dimension.width < 500 ? "G M" : "Gmail"}
             </Link>
           </div>
           <div className="mr-4 md:mr-16 md:pt-16 md:-rotate-90">
@@ -100,7 +79,7 @@ const Navigation = () => {
               onMouseOut={mouseOutEvent}
               className="p-2 hover:opacity-50 duration-300 ease-in-out"
             >
-              {windowWidth.innerWidth < 500 ? "G H" : "GitHub"}
+              {dimension.width < 500 ? "G H" : "GitHub"}
             </Link>
           </div>
           <div className="md:mb-8 mr-8 md:mr-16 md:pt-16 md:-rotate-90">
@@ -111,7 +90,7 @@ const Navigation = () => {
               onMouseOut={mouseOutEvent}
               className="p-2 hover:opacity-50 duration-300 ease-in-out"
             >
-              {windowWidth.innerWidth < 500 ? "L I" : "LinkedIn"}
+              {dimension.width < 500 ? "L I" : "LinkedIn"}
             </Link>
           </div>
           <div className="w-0 sm500:w-12 sm:w-24 md:w-[1px] h-[1px] md:h-24 opacity-75 bg-[#1a1818] -mt-1 md:mt-2 md:mb-20"></div>
