@@ -83,8 +83,8 @@ const WorkPage = () => {
               <div className="text-[11px] md:text-xs font-medium uppercase -mt-[10%] sm500:-mt-[5%]">
                 e-commerce website
               </div>
-              <div className="-mt-[10%] sm500:-mt-[5%]">
-                <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase  px-2 pt-2 pb-1 rounded-2xl">
+              <div className="-mt-[5%]">
+                <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase  px-2 py-1 rounded-2xl">
                   new
                 </div>
               </div>
@@ -107,15 +107,15 @@ const WorkPage = () => {
               <div className="text-[11px] md:text-xs font-medium uppercase -mt-[10%] sm500:-mt-[5%]">
                 social media application
               </div>
-              <div className="-mt-[10%] sm500:-mt-[5%]">
-                <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase  px-2 pt-2 pb-1 rounded-2xl">
+              <div className="-mt-[5%]">
+                <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase  px-2 py-1 rounded-2xl">
                   new
                 </div>
               </div>
             </div>
           </Link>
           <Link
-            to="/cryto-base"
+            to="/crypto-base"
             title="Crypto Base"
             onMouseOver={mouseOverEvent}
             onMouseOut={mouseOutEvent}
