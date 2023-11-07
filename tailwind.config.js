@@ -15,13 +15,8 @@ module.exports = {
     extend: {
       animation: {
         panImage: "panImage 20s linear infinite",
+        panImage2: "panImage2 10s linear infinite",
         scaleImage: "scaleImage 10s linear infinite",
-        colorImage1: "colorImage 3s linear infinite 0.3s",
-        colorImage2: "colorImage 3s linear infinite 0.5s",
-        colorImage3: "colorImage 3s linear infinite 0.7s",
-        colorImage4: "colorImage 3s linear infinite 0.9s",
-        colorImage5: "colorImage 3s linear infinite 1.2s",
-        colorImage6: "colorImage 3s linear infinite 1.5s",
       },
       keyframes: {
         panImage: {
@@ -30,17 +25,17 @@ module.exports = {
           "50.0001%": { objectPosition: "bottom" },
           "100%": { objectPosition: "top" },
         },
+        panImage2: {
+          "0%": { objectPosition: "left" },
+          "50%": { objectPosition: "right" },
+          "50.0001%": { objectPosition: "right" },
+          "100%": { objectPosition: "left" },
+        },
         scaleImage: {
           "0%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.25)" },
           "50.0001%": { transform: "scale(1.25)" },
           "100%": { transform: "scale(1)" },
-        },
-        colorImage: {
-          "0%": { color: "black" },
-          "50%": { color: "rgb(234 88 12)" },
-          "50.0001%": { color: "rgb(234 88 12)" },
-          "100%": { color: "black" },
         },
       },
     },

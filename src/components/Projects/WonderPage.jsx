@@ -180,7 +180,7 @@ const WonderPage = () => {
             visible in the database.
             <br />
             <br />
-            Consequently there was a lot more u nneccessary data being stored
+            Consequently there was a lot more unnecessary data being stored
             costing the company a fortune. Thi s could have had a catastrophic
             effect on the company.
             <br />
@@ -367,17 +367,6 @@ const WonderPage = () => {
             hooks, dynamic and protected routes (React-Router-Dom) and
             integrated authentication (Firebase). Futhermore, the thechnology
             used for the transition betweeen the pages (Framer Motion).
-          </div>
-        </div>
-        {/* Second Mockup */}
-        <div className="w-full sm500:w-[85%] md:w-[65%] h-[25vh] md:h-[50vh] rounded-[1vw] overflow-hidden bg-white flex justify-center items-center">
-          <div className="font-medium text-[13vw] md:text-[11vw] flex hover:scale-105 duration-300 ease-in-out">
-            <span className="animate-colorImage1">W</span>
-            <span className="animate-colorImage2">O</span>
-            <span className="animate-colorImage3">N</span>
-            <span className="animate-colorImage4">D</span>
-            <span className="animate-colorImage5">E</span>
-            <span className="animate-colorImage6">R</span>
           </div>
         </div>
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
