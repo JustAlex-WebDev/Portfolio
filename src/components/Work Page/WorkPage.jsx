@@ -71,22 +71,20 @@ const WorkPage = () => {
             title="Art Connection"
             onMouseOver={mouseOverEvent}
             onMouseOut={mouseOutEvent}
-            className="w-full md:w-[90%] flex flex-col gap-8 hover:opacity-50 duration-300 ease-in-out"
+            className="w-full md:w-[90%] flex flex-col gap-2 hover:opacity-50 duration-300 ease-in-out"
           >
             <div className="uppercase text-[12vw] sm500:text-[9vw] xl1100:text-[6vw] tracking-tighter">
               <div className="Avegas-Royale-Regular leading-[100%] pl-[5%]">
                 Art Connection
               </div>
             </div>
-            <div className="flex items-center gap-2 md:gap-4">
-              <div className="w-2 h-[1px] bg-[#ece7e1] -mt-[10%] sm500:-mt-[5%] ml-[2%]"></div>
-              <div className="text-[11px] md:text-xs font-medium uppercase -mt-[10%] sm500:-mt-[5%]">
+            <div className="flex justify-start items-center gap-2 md:gap-4 ml-[2%]">
+              <div className="w-2 h-[1px] bg-[#ece7e1]"></div>
+              <div className="text-[11px] md:text-xs font-medium uppercase">
                 e-commerce website
               </div>
-              <div className="-mt-[5%]">
-                <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase  px-2 py-1 rounded-2xl">
-                  new
-                </div>
+              <div className="bg-[#ece7e1] text-[#1a1818] px-4 py-1.5 pb-[5px] text-[11px] md:text-xs uppercase rounded-2xl font-semibold">
+                new
               </div>
             </div>
           </Link>
@@ -95,22 +93,20 @@ const WorkPage = () => {
             title="Wonder"
             onMouseOver={mouseOverEvent}
             onMouseOut={mouseOutEvent}
-            className="w-full md:w-[90%] flex flex-col gap-8 hover:opacity-50 duration-300 ease-in-out"
+            className="w-full md:w-[90%] flex flex-col gap-2 justify-center items-start hover:opacity-50 duration-300 ease-in-out"
           >
             <div className="uppercase text-[12vw] sm500:text-[9vw] xl1100:text-[6vw] tracking-tighter">
               <div className="Avegas-Royale-Regular leading-[100%] pl-[5%]">
                 Wonder
               </div>
             </div>
-            <div className="flex items-center gap-2 md:gap-4">
-              <div className="w-2 h-[1px] bg-[#ece7e1] -mt-[10%] sm500:-mt-[5%] ml-[2%]"></div>
-              <div className="text-[11px] md:text-xs font-medium uppercase -mt-[10%] sm500:-mt-[5%]">
+            <div className="flex justify-start items-center gap-2 md:gap-4 ml-[2%]">
+              <div className="w-2 h-[1px] bg-[#ece7e1]"></div>
+              <div className="text-[11px] md:text-xs font-medium uppercase">
                 social media application
               </div>
-              <div className="-mt-[5%]">
-                <div className="bg-[#ece7e1] text-[#1a1818] text-[11px] md:text-xs font-semibold uppercase  px-2 py-1 rounded-2xl">
-                  new
-                </div>
+              <div className="bg-[#ece7e1] text-[#1a1818] px-4 pt-1.5 pb-[5px] text-[11px] md:text-xs uppercase rounded-2xl font-semibold">
+                new
               </div>
             </div>
           </Link>
@@ -119,16 +115,16 @@ const WorkPage = () => {
             title="Crypto Base"
             onMouseOver={mouseOverEvent}
             onMouseOut={mouseOutEvent}
-            className="w-full md:w-[90%] flex flex-col gap-8 hover:opacity-50 duration-300 ease-in-out"
+            className="w-full md:w-[90%] flex flex-col gap-2 hover:opacity-50 duration-300 ease-in-out"
           >
             <div className="uppercase text-[12vw] sm500:text-[9vw] xl1100:text-[6vw] tracking-tighter">
               <div className="Avegas-Royale-Regular leading-[100%] pl-[5%]">
                 Crypto Base
               </div>
             </div>
-            <div className="flex items-center gap-2 md:gap-4">
-              <div className="w-2 h-[1px] bg-[#ece7e1] -mt-[10%] sm500:-mt-[5%] ml-[2%]"></div>
-              <div className="text-[11px] md:text-xs font-medium uppercase -mt-[10%] sm500:-mt-[5%]">
+            <div className="flex justify-start items-center gap-2 md:gap-4 ml-[2%]">
+              <div className="w-2 h-[1px] bg-[#ece7e1]"></div>
+              <div className="text-[11px] md:text-xs font-medium uppercase">
                 crypto api website
               </div>
             </div>

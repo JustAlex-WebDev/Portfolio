@@ -66,7 +66,7 @@ const Navigation = () => {
               to="mailto:alexvulov123@gmail.com"
               onMouseOver={mouseOverEvent}
               onMouseOut={mouseOutEvent}
-              className="p-2 hover:opacity-50 duration-300 ease-in-out"
+              className="py-2 hover:opacity-50 duration-300 ease-in-out"
             >
               {dimension.width < 500 ? "G M" : "Gmail"}
             </Link>
@@ -77,7 +77,7 @@ const Navigation = () => {
               target="_blank"
               onMouseOver={mouseOverEvent}
               onMouseOut={mouseOutEvent}
-              className="p-2 hover:opacity-50 duration-300 ease-in-out"
+              className="py-2 hover:opacity-50 duration-300 ease-in-out"
             >
               {dimension.width < 500 ? "G H" : "GitHub"}
             </Link>
@@ -88,7 +88,7 @@ const Navigation = () => {
               target="_blank"
               onMouseOver={mouseOverEvent}
               onMouseOut={mouseOutEvent}
-              className="p-2 hover:opacity-50 duration-300 ease-in-out"
+              className="py-2 hover:opacity-50 duration-300 ease-in-out"
             >
               {dimension.width < 500 ? "L I" : "LinkedIn"}
             </Link>
