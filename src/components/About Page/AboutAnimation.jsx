@@ -9,7 +9,7 @@ const AboutAnimation = () => {
         animate={{ transform: "translateY(-101%)" }}
         transition={{
           duration: 0.5,
-          delay: 0.1,
+          delay: 0,
           ease: "easeIn",
         }}
         className="absolute top-0 left-0 w-full h-full bg-[#1a1818] z-50"
@@ -19,7 +19,7 @@ const AboutAnimation = () => {
         animate={{ transform: "translateY(-101%)" }}
         transition={{
           duration: 1,
-          delay: 0.1,
+          delay: 0,
           ease: "ease",
         }}
         className="absolute top-0 left-0 w-full h-full bg-[#1a1818] z-50"
