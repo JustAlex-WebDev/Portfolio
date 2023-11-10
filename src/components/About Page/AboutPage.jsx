@@ -30,7 +30,7 @@ const AboutPage = () => {
             <div className="w-[85%] text-xs leading-5 sm500:text-sm sm500:leading-7 mt-4">
               The cusp of art and technology has always fascinated me and I've
               never been afraid to just jump in and give it a go, whether it's
-              Javascript, CSS, Firebase or Photoshop. I’ve been developing and
+              Javascript, CSS, Firebase or Figma. I’ve been developing and
               designing websites since the day I first bought my computer.
             </div>
             <div className="w-[85%] text-xs leading-5 sm500:text-sm sm500:leading-7">

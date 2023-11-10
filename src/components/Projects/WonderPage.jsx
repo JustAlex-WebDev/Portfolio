@@ -102,8 +102,9 @@ const WonderPage = () => {
             }}
             className="w-[100%] sm500:w-[70%] md:w-[45%] Avegas-Royale-Regular text-[5vw] sm350:text-[4vw] sm500:text-[3.25vw] sm:text-[3vw] md:text-[2.5vw] leading-[120%]"
           >
-            WONDER is a React full stack social media app. The app is build in
-            order for people to see something out of their circle of interests.
+            WONDER is a React full stack social media application. The app is
+            build in order for people to see new things that they would
+            otherwise not search for.
           </m.div>
         </div>
         {/* Role / Responsibilities / GitHub / URL */}
@@ -175,19 +176,19 @@ const WonderPage = () => {
             posts was slow and out-dated.
             <br />
             <br />
-            The state managment problem mentioned above was that after a user
-            that had uploaded a post, then deleted it, the post was still
-            visible in the database.
+            The state managment problem mentioned above was that after a user,
+            uploaded a post and then deleted it, the post was still kept in the
+            database.
             <br />
             <br />
-            Consequently there was a lot more unnecessary data being stored
-            costing the company a fortune. Thi s could have had a catastrophic
+            Consequently there was a lot more unnecessary data being stored,
+            costing the company a fortune. This could have had a catastrophic
             effect on the company.
             <br />
             <br />
             After analyzing the client's current situation and technological
             needs, the conclusion was that a whole new state managing system was
-            required.
+            going to be required.
           </div>
         </div>
         {/* On Scroll Gallery */}
@@ -363,10 +364,8 @@ const WonderPage = () => {
             <br />
             <br />
             Some of the technologies used throughout the development of this
-            application are React, Firebase and Tailwind. There are custom
-            hooks, dynamic and protected routes (React-Router-Dom) and
-            integrated authentication (Firebase). Futhermore, the thechnology
-            used for the transition betweeen the pages (Framer Motion).
+            application are: React, Firebase and Tailwind. There are custom
+            hooks, dynamic and protected routes and implemented authentication.
           </div>
         </div>
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
@@ -379,7 +378,9 @@ const WonderPage = () => {
             <br />
             <br />
             With the rewriting, the application has become not only a lot more
-            scalable, but beatifull to look at too.
+            scalable, but beatifull to look at too. Also, due to the rewriting
+            of the state managment and eliminating the unnecessarily stored
+            data, the company saved about 35% of their data managing expenses.
             <br />
             <br />
             <span className="font-medium">

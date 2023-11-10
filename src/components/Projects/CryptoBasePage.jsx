@@ -108,9 +108,9 @@ const CryptoBasePage = () => {
             Challenge
           </div>
           <div className="text-[10px] sm500:text-xs xl1100:text-sm xl:text-base">
-            Some of the things that challenged me most were insufficient
-            documentation and testing to determine that APIs is functional,
-            realiable and secure.
+            Some of the most challenging things, were the insufficient
+            documentation and all the testing that had to be done, in order to
+            determine that the APIs is functional, realiable and secure.
             <br />
             <br />
             I had to make myself familiar with Postman. A popular tool for
@@ -118,10 +118,11 @@ const CryptoBasePage = () => {
             authenticate APIs by generating tokens and access keys.
             <br />
             <br />
-            Also, companies nowadays become exposed to breaches if not carefully
-            protected. Hackers also gain access to customer information, further
-            adding insult to injury by affecting one's company's reputation.
-            That is why, it was so important for me to keep security a priority.
+            Furthermore, companies nowadays become exposed to breaches if not
+            carefully protected. Hackers also gain access to customer
+            information, further adding insult to injury by affecting one's
+            company's reputation. That is the reason why, it was so important
+            for me to keep security a priority.
           </div>
         </div>
         {/* Process */}
@@ -131,16 +132,17 @@ const CryptoBasePage = () => {
           </div>
           <div className="text-[10px] sm500:text-xs xl1100:text-sm xl:text-base">
             After going through, what felt like an eternity of YouTube / Postman
-            Turorials, I finnaly got the hang of it and started experimenting.
+            Turorials, I finnaly got the hang of it and started my own journey
+            of experimenting.
             <br />
             <br />
             It was not long until I was able to connect to the CoinGecko API and
-            make an API call. It could be said that it was all smooth sailing
-            after some more fails of course.
+            make an API call. It could be even said, that it was all smooth
+            sailing, after some more fails of course.
             <br />
             <br />
-            React, React-Router-Dom, useContex, Tailwind and Axious are only a
-            small number of the technologies used in this project.
+            React, React-Router-Dom, useContex, Tailwind and Axious are only
+            some of the technologies used in the project.
           </div>
         </div>
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
@@ -148,15 +150,15 @@ const CryptoBasePage = () => {
             Outcome
           </div>
           <div className="text-[10px] sm500:text-xs xl1100:text-sm xl:text-base">
-            After all the blood, sweat and tears, the project was fully
-            developed and ready for users to sign in and learn more about their
-            favourite crypto coin.
+            After all the "blood, sweat and tears", the project was fully
+            developed and ready for users to learn more about their favourite
+            crypto coin.
             <br />
             <br />
             This project, although not being as beatifull as some of my
-            freelancing jobs that I have done throughout the years, it was
-            definitely the most challenging and self fulling project that I have
-            ever developed.
+            freelancing projects shown in this portfolio, it was definitely the
+            most challenging and self-fulling projects that I have ever
+            developed.
           </div>
         </div>
         {/* Check it out button */}
