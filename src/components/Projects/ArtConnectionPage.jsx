@@ -383,11 +383,11 @@ const ArtConnectionPage = () => {
           </div>
           <div className="text-[10px] sm500:text-xs xl1100:text-sm xl:text-base">
             The new application, Art Connection, although still in production,
-            is faster, simpler to maintain the code.
+            is faster and simpler to maintain the code.
             <br />
             <br />
-            With the rewriting, the application has become scalable and possible
-            to implement and use by other similar businesses.
+            With the rewriting, the application has become more scalable and
+            user friendly.
             <br />
             <br />
             <span className="font-medium">
