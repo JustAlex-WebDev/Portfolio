@@ -102,9 +102,9 @@ const WonderPage = () => {
             }}
             className="w-[100%] sm500:w-[70%] md:w-[45%] Avegas-Royale-Regular text-[5vw] sm350:text-[4vw] sm500:text-[3.25vw] sm:text-[3vw] md:text-[2.5vw] leading-[120%]"
           >
-            WONDER is a React full stack social media application. The app is
-            build in order for people to see new things that they would
-            otherwise not search for.
+            WONDER is a React full stack social media application. The app's
+            goal is to expand one's circle of interests and help them grow as a
+            person.
           </m.div>
         </div>
         {/* Role / Responsibilities / GitHub / URL */}
