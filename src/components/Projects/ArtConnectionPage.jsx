@@ -349,7 +349,7 @@ const ArtConnectionPage = () => {
             client agreed to this solution.
             <br />
             <br />
-            The development was based on the plan created together with the
+            The development was based on a plan created together with the
             owners, which included adding new features and a redesign and
             implementation of the new and updated UI/UX of the website.
             <br />
