@@ -2,6 +2,7 @@ import React from "react";
 import { motion as m } from "framer-motion";
 import { useCursorContext } from "../../context/CursorContext";
 import { Link } from "react-router-dom";
+import myCV from "../../CV/my CV.pdf";
 
 const AboutPage = () => {
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
@@ -53,13 +54,17 @@ const AboutPage = () => {
               Figma / Photoshop / UX/UI Design / SEO Optimisation / Agile
               Methoologies / CMS Design & Architecture / Graphic Design
             </div>
-            <div
+            <a
               onMouseOver={mouseOverEvent}
               onMouseOut={mouseOutEvent}
-              className="w-auto py-2 px-10 bg-[#1a1818] text-[#ece7e1] Avegas-Royale-Regular text-[3vw] md:text-[1.5vw] text-center rounded-full hover:opacity-50 duration-300 ease-in-out"
+              href={myCV}
+              target="_blank"
+              rel="noreferrer"
             >
-              My CV
-            </div>
+              <div className="w-auto py-2 px-10 bg-[#1a1818] text-[#ece7e1] Avegas-Royale-Regular text-[3vw] md:text-[1.5vw] text-center rounded-full hover:opacity-50 duration-300 ease-in-out">
+                My CV
+              </div>
+            </a>
             <div className="w-[85%] Avegas-Royale-Regular uppercase text-xl sm500:text-2xl sm500 mt-4 ml-[4%]">
               experience
             </div>
