@@ -1,9 +1,9 @@
 # Portfolio
 
-## Alexandar Valov
+### Alexandar Valov
 
-### Front-End Web Developer / UX-UI Designer
-### Passionate about developing responsive, visually appealing and complex applications.
+#### Front-End Web Developer / UX-UI Designer
+#### Passionate about developing responsive, visually appealing and complex applications.
 
 ## About
 I'm Alexandar. A web developer, designer and problem solver.
