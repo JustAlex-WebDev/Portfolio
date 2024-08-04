@@ -35,8 +35,8 @@ Web Development / Structure & Design / Research & Optimization / SEO Optimizatio
 **GitHub:** [github.com/buglabAI](https://github.com/buglabAI)  
 **URL:** [buglab.ai](https://buglab.ai)
 
-### Freelancing (1 year)
-*Nov 2022 - Nov 2023*
+### Freelancing
+*Dec 2022 - Nov 2023*
 
 ## Education
 - **University of Plovdiv "Paisii Hilendarski"**  
