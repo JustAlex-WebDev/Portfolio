@@ -50,9 +50,28 @@ const AboutPage = () => {
               skills
             </div>
             <div className="w-[85%] text-xs leading-5 sm500:text-sm sm500:leading-7">
-              React / JavaScript / Firebase / Git / Tailwind / CSS / HTML /
-              Figma / Photoshop / UX/UI Design / SEO Optimisation / Agile
-              Methoologies / CMS Design & Architecture / Graphic Design
+              <div className="flex flex-col">
+                <div>
+                  <span className="font-medium">Front-End Development:</span>{" "}
+                  React, TypeScript, JavaScript, HTML, CSS, Tailwind
+                </div>
+
+                <div>
+                  <span className="font-medium">Design & Tools:</span> Figma,
+                  Adobe Photoshop, UX/UI Design, Graphic Design
+                </div>
+                <div>
+                  <span className="font-medium">Back-End & Services:</span>{" "}
+                  Firebase, Git, Postman
+                </div>
+                <div>
+                  <span className="font-medium">
+                    Optimization & Methodologies:
+                  </span>{" "}
+                  SEO Optimization, Agile Methodologies, CMS Design &
+                  Architecture
+                </div>
+              </div>
             </div>
             <a
               onMouseOver={mouseOverEvent}
@@ -69,13 +88,61 @@ const AboutPage = () => {
               experience
             </div>
             <div className="w-[85%] flex flex-col gap-4 text-xs leading-5 sm500:text-sm sm500:leading-7">
-              <div>
-                1 year experience in Front-end Web Development (Freelancing)
+              <div className="flex flex-col">
+                <div className="font-medium leading-5 text-sm sm500:text-base">
+                  Buglab
+                </div>
+                <div className="text-xs mb-2">Dec 2023 - Sep 2024</div>
+                <div className="opacity-75 mb-2">
+                  Spellcheck for UI that provides a no-code automated visual
+                  testing tool that eliminates manual errors, ensuring a
+                  flawless user experience despite updates.
+                </div>
+                <div>
+                  Role - <span className="opacity-75">Front-end Developer</span>
+                </div>
+                <div>
+                  Responsibilities -{" "}
+                  <span className="opacity-75">
+                    Web Development / Structure & Design / Research &
+                    Optimization / SEO Optimization
+                  </span>
+                </div>
+                <div>
+                  GitHub -{" "}
+                  <span className="opacity-75">github.com/buglabAI</span>
+                </div>
+                <div>
+                  URL - <span className="opacity-75">buglab.ai</span>
+                </div>
               </div>
               <div className="flex flex-col">
-                <div>University of Plovdiv "Paisii Hilendarski"</div>
-                <div>Bachelor's degree, Computer Software Engineering</div>
-                <div>(Jul 2023 - Jul 2027)</div>
+                <div className="font-medium leading-5 text-sm sm500:text-base">
+                  Freelancing
+                </div>
+                <div className="text-xs mb-2">Dec 2022 - Nov 2023</div>
+              </div>
+            </div>
+            <div className="w-[85%] Avegas-Royale-Regular uppercase text-xl sm500:text-2xl sm500 ml-[4%]">
+              education
+            </div>
+            <div className="w-[85%] flex flex-col gap-4 text-xs leading-5 sm500:text-sm sm500:leading-7">
+              <div className="flex flex-col">
+                <div className="font-medium leading-5 text-sm sm500:text-base">
+                  University of Plovdiv "Paisii Hilendarski"
+                </div>
+                <div className="opacity-75">
+                  Bachelor's degree, Computer Software Engineering
+                </div>
+                <div className="text-xs">Jul 2023 - Jul 2027</div>
+              </div>
+
+              <div className="flex flex-col">
+                <div className="font-medium leading-5 text-sm sm500:text-base">
+                  Cambridge Advanced Certificate <br />
+                  in English (CAE)
+                </div>
+                <div className="text-xs">Nov 2022</div>
               </div>
             </div>
             <Link
