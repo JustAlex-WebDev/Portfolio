@@ -47,8 +47,8 @@ _Dec 2022 - Nov 2023_
 ## Education
 
 - **University of Plovdiv "Paisii Hilendarski"**  
-  Bachelor's degree, Computer Software Engineering  
+Bachelor's degree, Computer Software Engineering  
   _Jul 2023 - Jul 2027_
 
-- **Cambridge Advanced Certificate in English (CAE)**  
-  _Nov 2022_
+- **Cambridge Advanced Certificate in English (CAE)**
+_Nov 2022_
