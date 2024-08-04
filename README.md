@@ -2,9 +2,9 @@
 
 [Check it out](https://portfolio-76600.web.app/ "Check it out")
 
-### Alexandar Valov
+## Alexandar Valov
 
-#### Front-End Web Developer / UX-UI Designer
+### Front-End Web Developer / UX-UI Designer
 
 #### Passionate about developing responsive, visually appealing, and complex applications.
 
