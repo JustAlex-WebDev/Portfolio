@@ -13,15 +13,15 @@ The intersection of art and technology has always fascinated me. Whether it's Ja
 
 What excites me most about being a Web Developer is the ability to create and design solutions that have a real purpose and solve real problems. It goes beyond designing buttons and websites; it's about crafting experiences that help people, whether it’s assisting them in marketing themselves online or facilitating online purchases. Understanding customer insights, identifying the right problems to solve, delivering swift solutions, learning from them, and iterating to improve over time is the essence of being a great web developer.
 
-### Skills
-- **Front-End Development:** React, TypeScript, JavaScript, HTML, CSS, Tailwind
-- **Design & Tools:** Figma, Photoshop, UX/UI Design, Graphic Design
-- **Back-End & Services:** Firebase, Git, Postman
-- **Optimization & Methodologies:** SEO Optimization, Agile Methodologies, CMS Design & Architecture
+## Skills
+**Front-End Development:** React, TypeScript, JavaScript, HTML, CSS, Tailwind
+**Design & Tools:** Figma, Photoshop, UX/UI Design, Graphic Design
+**Back-End & Services:** Firebase, Git, Postman
+**Optimization & Methodologies:** SEO Optimization, Agile Methodologies, CMS Design & Architecture
 
-### Experience
+## Experience
 
-#### Buglab
+### Buglab
 *Dec 2023 - Sep 2024*
 
 Buglab provides a no-code automated visual testing tool that eliminates manual errors, ensuring a flawless user experience despite updates.
@@ -35,7 +35,7 @@ Web Development / Structure & Design / Research & Optimization / SEO Optimizatio
 **GitHub:** [github.com/buglabAI](https://github.com/buglabAI)  
 **URL:** [buglab.ai](https://buglab.ai)
 
-### Education
+## Education
 - **University of Plovdiv "Paisii Hilendarski"**  
   Bachelor's degree, Computer Software Engineering  
   *Jul 2023 - Jul 2027*
