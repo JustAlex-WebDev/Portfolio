@@ -16,7 +16,7 @@ What excites me most about being a Web Developer is the ability to create and de
 
 ## Skills
 
-- **Front-End Development:** React, TypeScript, JavaScript, HTML, CSS, Tailwind
+- **Front-End Development:** React, TypeScript, JavaScript, HTML, CSS, Tailwind, Sass
 - **Design & Tools:** Figma, Photoshop, UX/UI Design, Graphic Design
 - **Back-End & Services:** Firebase, Git, Postman
 - **Optimization & Methodologies:** SEO Optimization, Agile Methodologies, CMS Design & Architecture
