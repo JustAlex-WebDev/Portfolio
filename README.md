@@ -25,7 +25,7 @@ What excites me most about being a Web Developer is the ability to create and de
 
 ## Experience
 
-### **Buglab**
+- **Buglab**
 
 _Dec 2023 - Sep 2024_
 
@@ -40,7 +40,7 @@ Web Development / Structure & Design / Research & Optimization / SEO Optimizatio
 **GitHub:** [github.com/buglabAI](https://github.com/buglabAI)  
 **URL:** [buglab.ai](https://buglab.ai)
 
-### **Freelancing**
+- **Freelancing**
 
 _Dec 2022 - Nov 2023_
 
