@@ -1,4 +1,4 @@
-# Portfolio ([Check it out](https://portfolio-76600.web.app/ "Check it out"))
+# [Portfolio](https://portfolio-76600.web.app/ "Portfolio")
 
 ## Alexandar Valov
 
