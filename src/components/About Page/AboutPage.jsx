@@ -53,7 +53,7 @@ const AboutPage = () => {
               <div className="flex flex-col">
                 <div>
                   <span className="font-medium">Front-End Development:</span>{" "}
-                  React, TypeScript, JavaScript, HTML, CSS, Tailwind
+                  React, TypeScript, JavaScript, HTML, CSS, Tailwind, Sass
                 </div>
 
                 <div>
