@@ -45,4 +45,4 @@ Bachelor's degree, Computer Software Engineering
   _Jul 2023 - Jul 2027_
 
 - **Cambridge Advanced Certificate in English (CAE)**
-  _Nov 2022_
+      _Nov 2022_
