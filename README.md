@@ -30,11 +30,9 @@ What excites me most about being a Web Developer is the ability to create and de
 
   Spellcheck for UI that provides a no-code automated visual testing tool that eliminates manual errors, ensuring a flawless user experience despite updates.
 
-  **Role:**  
-  Front-end Development
+  **Role:** Front-end Development
 
-  **Responsibilities:**  
-  Web Development / Structure & Design / Research & Optimization / SEO Optimization
+  **Responsibilities:** Web Development / Structure & Design / Research & Optimization / SEO Optimization
 
   **GitHub:** [github.com/buglabAI](https://github.com/buglabAI)  
   **URL:** [buglab.ai](https://buglab.ai)
