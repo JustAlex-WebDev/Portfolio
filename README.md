@@ -25,24 +25,22 @@ What excites me most about being a Web Developer is the ability to create and de
 
 ## Experience
 
-### Buglab
+- **Buglab**  
+  _Dec 2023 - Sep 2024_
 
-_Dec 2023 - Sep 2024_
+  Spellcheck for UI that provides a no-code automated visual testing tool that eliminates manual errors, ensuring a flawless user experience despite updates.
 
-Spellcheck for UI that provides a no-code automated visual testing tool that eliminates manual errors, ensuring a flawless user experience despite updates.
+  **Role:**  
+  Front-end Development
 
-**Role:**
-Front-end Development
+  **Responsibilities:**  
+  Web Development / Structure & Design / Research & Optimization / SEO Optimization
 
-**Responsibilities:**
-Web Development / Structure & Design / Research & Optimization / SEO Optimization
+  **GitHub:** [github.com/buglabAI](https://github.com/buglabAI)  
+  **URL:** [buglab.ai](https://buglab.ai)
 
-**GitHub:** [github.com/buglabAI](https://github.com/buglabAI)  
-**URL:** [buglab.ai](https://buglab.ai)
-
-### Freelancing
-
-_Dec 2022 - Nov 2023_
+- **Freelancing**  
+  _Dec 2022 - Nov 2023_
 
 ## Education
 
