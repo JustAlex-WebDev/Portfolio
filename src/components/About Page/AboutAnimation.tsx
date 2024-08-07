@@ -1,9 +1,10 @@
 import React from "react";
 import { motion as m } from "framer-motion";
 
-const AboutAnimation = () => {
+const AboutAnimation: React.FC = () => {
   return (
     <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+      {/* First animation layer */}
       <m.div
         initial={{ transform: "translateY(0%)" }}
         animate={{ transform: "translateY(-101%)" }}
@@ -14,6 +15,8 @@ const AboutAnimation = () => {
         }}
         className="absolute top-0 left-0 w-full h-full bg-[#1a1818] z-50"
       ></m.div>
+
+      {/* Second animation layer */}
       <m.div
         initial={{ transform: "translateY(30%)" }}
         animate={{ transform: "translateY(-101%)" }}

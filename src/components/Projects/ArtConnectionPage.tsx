@@ -1,20 +1,21 @@
-import React, { useEffect, useRef } from "react";
-import { motion as m, useTransform, useScroll } from "framer-motion";
+import { motion as m, useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useCursorContext } from "../../context/CursorContext";
-import Lenis from "@studio-freight/lenis";
 import useDimension from "../../hooks/useDimension";
 
-const ArtConnectionPage = () => {
+const ArtConnectionPage: React.FC = () => {
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
 
-  // On Scroll Animation/Functionallity
-  const container = useRef(null);
+  // On Scroll Animation/Functionality
+  const container = useRef<HTMLDivElement | null>(null);
   const dimension = useDimension();
+
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start end", "end start"],
   });
+
   const y1 = useTransform(
     scrollYProgress,
     [0, 1],
@@ -56,22 +57,10 @@ const ArtConnectionPage = () => {
     ]
   );
 
-  // Smooth Scrolling
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
-
   return (
     <>
+      {/* Hero Section */}
       <div className="bg-[#ece7e1] text-[#1a1818] w-full h-screen flex justify-center items-center -mb-72 md:-mb-20">
-        {/* Title */}
         <div className="relative z-50 w-full h-[15%] sm350:h-1/2 sm:h-[80%] md:h-[70%] flex justify-center items-end text-[#ece7e1]">
           <div className="w-full text-center overflow-hidden px-4">
             <m.div
@@ -90,8 +79,9 @@ const ArtConnectionPage = () => {
           </div>
         </div>
       </div>
+
+      {/* About the project */}
       <div className="bg-[#ece7e1] text-[#1a1818] w-full h-full flex flex-col justify-center items-center gap-16 sm350:gap-24 xl1100:gap-32 xxl:gap-48 mb-20 px-8 mt-0 sm350:mt-48 sm:mt-80 md:mt-16 xl1100:mt-24 ">
-        {/* About the project */}
         <div className="overflow-hidden w-full flex justify-center items-center text-center">
           <m.div
             initial={{ transform: "translateY(100%)" }}
@@ -108,6 +98,7 @@ const ArtConnectionPage = () => {
             industry.
           </m.div>
         </div>
+
         {/* Role / Responsibilities / GitHub / URL */}
         <div className="w-full md:w-[85%] xl1100:w-[65%] flex flex-col xl1100:flex-row justify-center items-center xl1100:items-start gap-4 sm500:gap-12 text-[8px] sm350:text-[10px] sm500:text-xs xl1100:text-sm xl:text-base">
           <div className="w-full sm500:w-[85%] md:w-[75%] xl1100:w-1/2 flex justify-between gap-4 sm500:gap-12">
@@ -158,6 +149,7 @@ const ArtConnectionPage = () => {
             </div>
           </div>
         </div>
+
         {/* First Mockup */}
         <div className="w-full sm500:w-[85%] md:w-[65%] h-[12.5rem] sm350:h-[15rem] sm500:h-[20rem] sm:h-[25rem] lg:h-[30rem] xl1100:h-[40rem] xxl:h-[50rem] rounded-[1vw] overflow-hidden">
           <img
@@ -166,6 +158,7 @@ const ArtConnectionPage = () => {
             className="w-full h-full object-cover animate-panImage hover:scale-125 duration-300 ease-in-out"
           />
         </div>
+
         {/* Challenge */}
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
@@ -193,6 +186,7 @@ const ArtConnectionPage = () => {
             increasing customer base and team.
           </div>
         </div>
+
         {/* On Scroll Gallery */}
         <div className="w-full sm500:w-[85%] md:w-[65%]">
           <div
@@ -337,6 +331,7 @@ const ArtConnectionPage = () => {
             )}
           </div>
         </div>
+
         {/* Process */}
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
@@ -369,6 +364,7 @@ const ArtConnectionPage = () => {
             payment system integration.
           </div>
         </div>
+
         {/* Second Mockup */}
         <div className="w-full sm500:w-[85%] md:w-[65%] h-auto rounded-[1vw] overflow-hidden">
           <img
@@ -377,6 +373,8 @@ const ArtConnectionPage = () => {
             className="w-full h-full object-cover object-center animate-scaleImage duration-300 ease-in-out"
           />
         </div>
+
+        {/* Outcome */}
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
             Outcome
@@ -397,6 +395,7 @@ const ArtConnectionPage = () => {
             </span>
           </div>
         </div>
+
         {/* Check it out button */}
         <div className="w-full flex flex-col justify-center items-center gap-8 sm:gap-12">
           <div className="Avegas-Royale-Regular text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
