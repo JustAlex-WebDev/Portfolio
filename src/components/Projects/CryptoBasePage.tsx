@@ -1,15 +1,15 @@
-import React from "react";
 import { motion as m } from "framer-motion";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useCursorContext } from "../../context/CursorContext";
 
-const CryptoBasePage = () => {
+const CryptoBasePage: React.FC = () => {
   const { mouseOverEvent, mouseOutEvent } = useCursorContext();
 
   return (
     <>
+      {/* Hero Section */}
       <div className="bg-[#ece7e1] text-[#1a1818] w-full h-screen flex justify-center items-center -mb-72 md:-mb-20">
-        {/* Title */}
         <div className="relative z-50 w-full h-[15%] sm350:h-1/2 sm:h-[80%] md:h-[70%] flex justify-center items-end text-[#ece7e1]">
           <div className="w-full text-center overflow-hidden px-4 -mt-[5%]">
             <m.div
@@ -27,8 +27,9 @@ const CryptoBasePage = () => {
           </div>
         </div>
       </div>
+
+      {/* About the project */}
       <div className="bg-[#ece7e1] text-[#1a1818] w-full h-full flex flex-col justify-center items-center gap-16 sm350:gap-24 xl1100:gap-32 xxl:gap-48 mb-20 px-8 mt-0 sm350:mt-48 sm:mt-80 md:mt-16 xl1100:mt-24 ">
-        {/* About the project */}
         <div className="overflow-hidden w-full flex justify-center items-center text-center">
           <m.div
             initial={{ transform: "translateY(100%)" }}
@@ -44,6 +45,7 @@ const CryptoBasePage = () => {
             connect to the CoinGecko API and make API calls.
           </m.div>
         </div>
+
         {/* Role / Responsibilities / GitHub / URL */}
         <div className="w-full md:w-[85%] xl1100:w-[65%] flex flex-col xl1100:flex-row justify-center items-center xl1100:items-start gap-4 sm500:gap-12 text-[8px] sm350:text-[10px] sm500:text-xs xl1100:text-sm xl:text-base">
           <div className="w-full sm500:w-[85%] md:w-[75%] xl1100:w-1/2 flex justify-between gap-4 sm500:gap-12">
@@ -94,6 +96,7 @@ const CryptoBasePage = () => {
             </div>
           </div>
         </div>
+
         {/* First Mockup */}
         <div className="w-full sm500:w-[85%] md:w-[65%] h-[18.5rem] sm350:h-[20rem] sm500:h-[25rem] sm:h-[25rem] lg:h-[30rem] xl1100:h-[40rem] xxl:h-[50rem] rounded-[1vw] overflow-hidden">
           <img
@@ -102,6 +105,7 @@ const CryptoBasePage = () => {
             className="w-full h-full object-cover animate-panImage2 hover:scale-150 sm500:hover:scale-125 duration-300 ease-in-out"
           />
         </div>
+
         {/* Challenge */}
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
@@ -125,6 +129,7 @@ const CryptoBasePage = () => {
             for me to keep security a priority.
           </div>
         </div>
+
         {/* Process */}
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
@@ -145,6 +150,8 @@ const CryptoBasePage = () => {
             some of the technologies used in the project.
           </div>
         </div>
+
+        {/* Outcome */}
         <div className="w-full sm350:w-[85%] md:w-[60%] xl1100:w-1/2 xl:w-[40%] flex flex-col gap-8">
           <div className="Avegas-Royale-Regular ml-[5%] text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">
             Outcome
@@ -161,6 +168,7 @@ const CryptoBasePage = () => {
             developed.
           </div>
         </div>
+
         {/* Check it out button */}
         <div className="w-full flex flex-col justify-center items-center gap-8 sm:gap-12">
           <div className="Avegas-Royale-Regular text-[6vw] sm350:text-[4.5vw] sm500:text-[3.5vw] md:text-[2.5vw]">

@@ -1,14 +1,14 @@
 import React from "react";
-import CryptoBasePage from "../components/Projects/CryptoBasePage";
 import ProjectsAnimation from "../components/Projects/ProjectsAnimation";
+import WonderPage from "../components/Projects/WonderPage";
 
-const CryptoBase = () => {
+const Wonder: React.FC = () => {
   return (
     <div className="z-30 relative">
       <ProjectsAnimation />
-      <CryptoBasePage />
+      <WonderPage />
     </div>
   );
 };
 
-export default CryptoBase;
+export default Wonder;

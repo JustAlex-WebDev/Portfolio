@@ -1,18 +1,20 @@
-import React from "react";
 import { AnimatePresence } from "framer-motion";
+import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import CursorContextProvider from "./context/CursorContext";
 import Cursor from "./components/Cursor";
-import Home from "./routes/Home";
-import Work from "./routes/Work";
-import About from "./routes/About";
-import Contact from "./routes/Contact";
 import Navigation from "./components/Navigation";
+import CursorContextProvider from "./context/CursorContext";
+import About from "./routes/About";
 import ArtConnection from "./routes/ArtConnection";
-import Wonder from "./routes/Wonder";
+import Contact from "./routes/Contact";
 import CryptoBase from "./routes/CryptoBase";
+import Home from "./routes/Home";
+import Wonder from "./routes/Wonder";
+import Work from "./routes/Work";
 
+// Main App component
 function App() {
+  // Get the current location from React Router
   const location = useLocation();
 
   return (
@@ -22,7 +24,7 @@ function App() {
         <Navigation />
 
         <AnimatePresence initial={true}>
-          <Routes location={location} key={location.pathName}>
+          <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
